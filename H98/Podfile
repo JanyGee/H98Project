@@ -9,5 +9,5 @@ target 'H98'do
     pod 'Alamofire'#类似AFN
     pod 'YYModel'
     pod 'YYKit'
-    pod 'LBXScan/LBXNative'#原生二维码扫描
+    #pod 'LBXScan/LBXNative'#原生二维码扫描pod 'swiftScan'
 end
