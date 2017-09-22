@@ -14,7 +14,7 @@ class LYCodeViewController: LBXScanViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+        view.backgroundColor = UIColor.lightGray
         var style = LBXScanViewStyle()
         style.anmiationStyle = .NetGrid
         style.animationImage = UIImage(named: "qrcode_scan_full_net")
