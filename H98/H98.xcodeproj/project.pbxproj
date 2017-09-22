@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3127AB271F750BC0003AC960 /* LBXPermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3127AB201F750BC0003AC960 /* LBXPermissions.swift */; };
+		3127AB281F750BC0003AC960 /* LBXScanLineAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3127AB211F750BC0003AC960 /* LBXScanLineAnimation.swift */; };
+		3127AB291F750BC0003AC960 /* LBXScanNetAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3127AB221F750BC0003AC960 /* LBXScanNetAnimation.swift */; };
+		3127AB2A1F750BC0003AC960 /* LBXScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3127AB231F750BC0003AC960 /* LBXScanView.swift */; };
+		3127AB2B1F750BC0003AC960 /* LBXScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3127AB241F750BC0003AC960 /* LBXScanViewController.swift */; };
+		3127AB2C1F750BC0003AC960 /* LBXScanViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3127AB251F750BC0003AC960 /* LBXScanViewStyle.swift */; };
+		3127AB2D1F750BC0003AC960 /* LBXScanWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3127AB261F750BC0003AC960 /* LBXScanWrapper.swift */; };
 		314BD8161F74A2950098F9A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314BD8151F74A2950098F9A6 /* AppDelegate.swift */; };
 		314BD81D1F74A2950098F9A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 314BD81C1F74A2950098F9A6 /* Assets.xcassets */; };
 		314BD8371F74AA0B0098F9A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 314BD8391F74AA0B0098F9A6 /* InfoPlist.strings */; };
@@ -50,6 +57,13 @@
 
 /* Begin PBXFileReference section */
 		12E32502DA873E0CDC35C2F6 /* Pods-H98.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H98.debug.xcconfig"; path = "Pods/Target Support Files/Pods-H98/Pods-H98.debug.xcconfig"; sourceTree = "<group>"; };
+		3127AB201F750BC0003AC960 /* LBXPermissions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXPermissions.swift; sourceTree = "<group>"; };
+		3127AB211F750BC0003AC960 /* LBXScanLineAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXScanLineAnimation.swift; sourceTree = "<group>"; };
+		3127AB221F750BC0003AC960 /* LBXScanNetAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXScanNetAnimation.swift; sourceTree = "<group>"; };
+		3127AB231F750BC0003AC960 /* LBXScanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXScanView.swift; sourceTree = "<group>"; };
+		3127AB241F750BC0003AC960 /* LBXScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXScanViewController.swift; sourceTree = "<group>"; };
+		3127AB251F750BC0003AC960 /* LBXScanViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXScanViewStyle.swift; sourceTree = "<group>"; };
+		3127AB261F750BC0003AC960 /* LBXScanWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXScanWrapper.swift; sourceTree = "<group>"; };
 		314BD8121F74A2950098F9A6 /* H98.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = H98.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		314BD8151F74A2950098F9A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		314BD81C1F74A2950098F9A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -122,6 +136,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3127AB1F1F750BC0003AC960 /* SwiftScan */ = {
+			isa = PBXGroup;
+			children = (
+				3127AB201F750BC0003AC960 /* LBXPermissions.swift */,
+				3127AB211F750BC0003AC960 /* LBXScanLineAnimation.swift */,
+				3127AB221F750BC0003AC960 /* LBXScanNetAnimation.swift */,
+				3127AB231F750BC0003AC960 /* LBXScanView.swift */,
+				3127AB241F750BC0003AC960 /* LBXScanViewController.swift */,
+				3127AB251F750BC0003AC960 /* LBXScanViewStyle.swift */,
+				3127AB261F750BC0003AC960 /* LBXScanWrapper.swift */,
+			);
+			path = SwiftScan;
+			sourceTree = "<group>";
+		};
 		314BD8091F74A2950098F9A6 = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +204,7 @@
 		314BD82E1F74A3A20098F9A6 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				3127AB1F1F750BC0003AC960 /* SwiftScan */,
 				314BD8761F74ABF00098F9A6 /* Additions(快速遍历构造) */,
 				314BD86D1F74ABBD0098F9A6 /* Bundle+Extension.swift */,
 				314BD86E1F74ABBD0098F9A6 /* UIView+Extension.swift */,
@@ -466,6 +495,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3127AB2A1F750BC0003AC960 /* LBXScanView.swift in Sources */,
 				314BD8701F74ABBD0098F9A6 /* UIView+Extension.swift in Sources */,
 				314BD8951F74AC030098F9A6 /* UILabel+CZAddition.m in Sources */,
 				314BD8681F74AB990098F9A6 /* LYScanView.swift in Sources */,
@@ -480,11 +510,13 @@
 				314BD85E1F74AB860098F9A6 /* LYBindleViewController.swift in Sources */,
 				314BD8591F74AB7A0098F9A6 /* LYRegistViewController.swift in Sources */,
 				314BD8961F74AC030098F9A6 /* UIScreen+CZAddition.m in Sources */,
+				3127AB2D1F750BC0003AC960 /* LBXScanWrapper.swift in Sources */,
 				314BD84A1F74AB490098F9A6 /* JanyBaseViewController.swift in Sources */,
 				314BD8601F74AB860098F9A6 /* LYInputViewController.swift in Sources */,
 				314BD8571F74AB7A0098F9A6 /* LYForgetViewController.swift in Sources */,
 				314BD84E1F74AB560098F9A6 /* LYHomeViewController.swift in Sources */,
 				314BD84B1F74AB490098F9A6 /* JanyMainViewController.swift in Sources */,
+				3127AB2B1F750BC0003AC960 /* LBXScanViewController.swift in Sources */,
 				314BD85F1F74AB860098F9A6 /* LYCodeViewController.swift in Sources */,
 				314BD8501F74AB630098F9A6 /* LYInteractiveViewController.swift in Sources */,
 				314BD8921F74AC030098F9A6 /* NSString+Hash.m in Sources */,
@@ -493,10 +525,14 @@
 				314BD8981F74AC030098F9A6 /* UIViewController+CZAddition.m in Sources */,
 				314BD8931F74AC030098F9A6 /* UIButton+CZAddition.m in Sources */,
 				314BD8521F74AB6C0098F9A6 /* LYMineViewController.swift in Sources */,
+				3127AB271F750BC0003AC960 /* LBXPermissions.swift in Sources */,
 				314BD8691F74AB990098F9A6 /* LYSecondLoginView.swift in Sources */,
 				314BD85A1F74AB7A0098F9A6 /* LYResetViewController.swift in Sources */,
+				3127AB2C1F750BC0003AC960 /* LBXScanViewStyle.swift in Sources */,
+				3127AB291F750BC0003AC960 /* LBXScanNetAnimation.swift in Sources */,
 				314BD86A1F74AB990098F9A6 /* LYTitleView.swift in Sources */,
 				314BD88E1F74AC030098F9A6 /* NSArray+CZAddition.m in Sources */,
+				3127AB281F750BC0003AC960 /* LBXScanLineAnimation.swift in Sources */,
 				314BD84C1F74AB490098F9A6 /* JanyNavigationController.swift in Sources */,
 				314BD86B1F74AB990098F9A6 /* LYTxtCodeView.swift in Sources */,
 				314BD8971F74AC030098F9A6 /* UIView+CZAddition.m in Sources */,
