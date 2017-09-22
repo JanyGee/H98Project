@@ -45,8 +45,6 @@
 		314BD8961F74AC030098F9A6 /* UIScreen+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 314BD8891F74AC030098F9A6 /* UIScreen+CZAddition.m */; };
 		314BD8971F74AC030098F9A6 /* UIView+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 314BD88B1F74AC030098F9A6 /* UIView+CZAddition.m */; };
 		314BD8981F74AC030098F9A6 /* UIViewController+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 314BD88D1F74AC030098F9A6 /* UIViewController+CZAddition.m */; };
-		314BD8A01F74B0B80098F9A6 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 314BD89E1F74B0B80098F9A6 /* LICENSE */; };
-		314BD8A11F74B0B80098F9A6 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 314BD89F1F74B0B80098F9A6 /* README.md */; };
 		9ECAD8520D95732768DA2B43 /* Pods_H98.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B36D0279FA612485CC45A48 /* Pods_H98.framework */; };
 /* End PBXBuildFile section */
 
@@ -110,8 +108,6 @@
 		314BD88B1F74AC030098F9A6 /* UIView+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CZAddition.m"; sourceTree = "<group>"; };
 		314BD88C1F74AC030098F9A6 /* UIViewController+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CZAddition.h"; sourceTree = "<group>"; };
 		314BD88D1F74AC030098F9A6 /* UIViewController+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CZAddition.m"; sourceTree = "<group>"; };
-		314BD89E1F74B0B80098F9A6 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		314BD89F1F74B0B80098F9A6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3B36D0279FA612485CC45A48 /* Pods_H98.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_H98.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBC95004868FAD62C0A314A3 /* Pods-H98.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H98.release.xcconfig"; path = "Pods/Target Support Files/Pods-H98/Pods-H98.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -220,8 +216,6 @@
 		314BD8311F74A5850098F9A6 /* PodspecMetadata */ = {
 			isa = PBXGroup;
 			children = (
-				314BD89E1F74B0B80098F9A6 /* LICENSE */,
-				314BD89F1F74B0B80098F9A6 /* README.md */,
 			);
 			name = PodspecMetadata;
 			sourceTree = "<group>";
@@ -406,7 +400,6 @@
 				314BD81D1F74A2950098F9A6 /* Assets.xcassets in Resources */,
 				314BD8371F74AA0B0098F9A6 /* InfoPlist.strings in Resources */,
 				314BD83A1F74AA0F0098F9A6 /* Localizable.strings in Resources */,
-				314BD8A01F74B0B80098F9A6 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,7 +504,6 @@
 				314BD8981F74AC030098F9A6 /* UIViewController+CZAddition.m in Sources */,
 				314BD8931F74AC030098F9A6 /* UIButton+CZAddition.m in Sources */,
 				314BD8521F74AB6C0098F9A6 /* LYMineViewController.swift in Sources */,
-				314BD8A11F74B0B80098F9A6 /* README.md in Sources */,
 				314BD8691F74AB990098F9A6 /* LYSecondLoginView.swift in Sources */,
 				314BD85A1F74AB7A0098F9A6 /* LYResetViewController.swift in Sources */,
 				314BD86A1F74AB990098F9A6 /* LYTitleView.swift in Sources */,
