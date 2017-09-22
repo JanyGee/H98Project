@@ -58,8 +58,6 @@
 		314BD8321F74A8650098F9A6 /* H98-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "H98-Bridging-Header.h"; sourceTree = "<group>"; };
 		314BD8381F74AA0B0098F9A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		314BD83B1F74AA0F0098F9A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		314BD83D1F74AA180098F9A6 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		314BD83E1F74AA180098F9A6 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		314BD83F1F74AA1B0098F9A6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		314BD8401F74AA1B0098F9A6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		314BD8471F74AB480098F9A6 /* JanyBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JanyBaseViewController.swift; sourceTree = "<group>"; };
@@ -384,7 +382,6 @@
 			knownRegions = (
 				en,
 				Base,
-				"zh-Hant",
 				"zh-Hans",
 			);
 			mainGroup = 314BD8091F74A2950098F9A6;
@@ -527,7 +524,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				314BD8381F74AA0B0098F9A6 /* en */,
-				314BD83E1F74AA180098F9A6 /* zh-Hant */,
 				314BD8401F74AA1B0098F9A6 /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
@@ -537,7 +533,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				314BD83B1F74AA0F0098F9A6 /* en */,
-				314BD83D1F74AA180098F9A6 /* zh-Hant */,
 				314BD83F1F74AA1B0098F9A6 /* zh-Hans */,
 			);
 			name = Localizable.strings;

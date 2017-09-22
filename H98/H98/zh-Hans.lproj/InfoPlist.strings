@@ -5,3 +5,7 @@
   Created by Jany on 17/9/22.
   Copyright © 2017年 apple. All rights reserved.
 */
+CFBundleDisplayName = "爱乐";
+NSCameraUsageDescription = "App需要您的同意,才能访问相机";
+NSLocationAlwaysUsageDescription = "若不允许，没有设备定位信息时，位置信息都会跳转到默认位置，也有可能导致地图无法显示。";
+NSPhotoLibraryUsageDescription = "App需要您的同意,才能访问相册";
