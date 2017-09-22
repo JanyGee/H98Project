@@ -33,7 +33,6 @@
 		314BD86F1F74ABBD0098F9A6 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314BD86D1F74ABBD0098F9A6 /* Bundle+Extension.swift */; };
 		314BD8701F74ABBD0098F9A6 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314BD86E1F74ABBD0098F9A6 /* UIView+Extension.swift */; };
 		314BD8721F74ABCD0098F9A6 /* LYRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314BD8711F74ABCD0098F9A6 /* LYRequestManager.swift */; };
-		314BD8751F74ABD80098F9A6 /* UIImage+GenerateQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 314BD8741F74ABD80098F9A6 /* UIImage+GenerateQRCode.m */; };
 		314BD88E1F74AC030098F9A6 /* NSArray+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 314BD8791F74AC030098F9A6 /* NSArray+CZAddition.m */; };
 		314BD88F1F74AC030098F9A6 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 314BD87B1F74AC030098F9A6 /* NSArray+Log.m */; };
 		314BD8901F74AC030098F9A6 /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = 314BD87D1F74AC030098F9A6 /* NSAttributedString+CZAdditon.m */; };
@@ -82,8 +81,6 @@
 		314BD86D1F74ABBD0098F9A6 /* Bundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		314BD86E1F74ABBD0098F9A6 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		314BD8711F74ABCD0098F9A6 /* LYRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYRequestManager.swift; sourceTree = "<group>"; };
-		314BD8731F74ABD80098F9A6 /* UIImage+GenerateQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GenerateQRCode.h"; sourceTree = "<group>"; };
-		314BD8741F74ABD80098F9A6 /* UIImage+GenerateQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GenerateQRCode.m"; sourceTree = "<group>"; };
 		314BD8771F74AC030098F9A6 /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
 		314BD8781F74AC030098F9A6 /* NSArray+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CZAddition.h"; sourceTree = "<group>"; };
 		314BD8791F74AC030098F9A6 /* NSArray+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CZAddition.m"; sourceTree = "<group>"; };
@@ -179,7 +176,6 @@
 		314BD82E1F74A3A20098F9A6 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				314BD8991F74AC1A0098F9A6 /* QRCode(二维码生成) */,
 				314BD8761F74ABF00098F9A6 /* Additions(快速遍历构造) */,
 				314BD86D1F74ABBD0098F9A6 /* Bundle+Extension.swift */,
 				314BD86E1F74ABBD0098F9A6 /* UIView+Extension.swift */,
@@ -306,15 +302,6 @@
 				314BD88D1F74AC030098F9A6 /* UIViewController+CZAddition.m */,
 			);
 			name = "Additions(快速遍历构造)";
-			sourceTree = "<group>";
-		};
-		314BD8991F74AC1A0098F9A6 /* QRCode(二维码生成) */ = {
-			isa = PBXGroup;
-			children = (
-				314BD8731F74ABD80098F9A6 /* UIImage+GenerateQRCode.h */,
-				314BD8741F74ABD80098F9A6 /* UIImage+GenerateQRCode.m */,
-			);
-			name = "QRCode(二维码生成)";
 			sourceTree = "<group>";
 		};
 		BCFA695579FEA097A50B1E8D /* Frameworks */ = {
@@ -500,7 +487,6 @@
 				314BD84B1F74AB490098F9A6 /* JanyMainViewController.swift in Sources */,
 				314BD85F1F74AB860098F9A6 /* LYCodeViewController.swift in Sources */,
 				314BD8501F74AB630098F9A6 /* LYInteractiveViewController.swift in Sources */,
-				314BD8751F74ABD80098F9A6 /* UIImage+GenerateQRCode.m in Sources */,
 				314BD8921F74AC030098F9A6 /* NSString+Hash.m in Sources */,
 				314BD8941F74AC030098F9A6 /* UIColor+CZAddition.m in Sources */,
 				314BD8581F74AB7A0098F9A6 /* LYLoginViewController.swift in Sources */,
