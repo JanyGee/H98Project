@@ -1,0 +1,34 @@
+/* 
+  Localizable.strings
+  H98
+
+  Created by Jany on 17/9/22.
+  Copyright © 2017年 apple. All rights reserved.
+*/
+"first_Page" = "首页";
+"Interactive" = "互动";
+"mine" = "我的";
+"login_title" = "Login";
+"input_email_or_iphone" = "填写手机/邮箱";
+"input_pwd" = "填写密码";
+"login" = "Log in";
+"regist" = "注册";
+"forget_pwd" = "忘记密码";
+"qq_login" = "QQ";
+"weixin_login" = "WeChat";
+"send_code" = "send code";
+"input_code" = "input code";
+"next" = "next";
+"competition" = "competition";
+"new_pwd" = "input new password";
+"again_pwd" = "input again";
+"reset_pwd" = "reset password";
+"bind_equipment" = "绑定设备";
+"scan_for_bind" = "扫描设备二维码绑定";
+"input_number" = "输入设备串号绑定";
+"introduce" = "请查看手表说明书";
+"input_number" = "输入串号";
+"bind" = "绑定";
+"input_wait_bind" = "请输入待绑定的设备串号";
+"scaning_code" = "扫描二维码";
+"scaning_label" = "将二维码图片对准扫描框即可自动扫描";

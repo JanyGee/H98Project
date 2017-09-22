@@ -1,0 +1,12 @@
+platform :ios,'8.0'
+target 'H98'do
+    # Comment this line if you're not using Swift and don't want to use dynamic frameworks可能是要添加的这个库 不支持swift导致
+    use_frameworks!
+    pod 'BaiduMapKit'
+    pod 'GoogleMaps'
+    pod 'Hero'
+    pod 'SnapKit'#类似Masonry
+    pod 'Alamofire'#类似AFN
+    pod 'YYModel'
+    pod 'YYKit'
+end

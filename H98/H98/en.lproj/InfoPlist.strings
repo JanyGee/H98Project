@@ -1,0 +1,11 @@
+/* 
+  InfoPlist.strings
+  H98
+
+  Created by Jany on 17/9/22.
+  Copyright © 2017年 apple. All rights reserved.
+*/
+CFBundleDisplayName = "iLe";
+NSCameraUsageDescription = "To access the camera App need your approval.";
+NSLocationAlwaysUsageDescription = "If not allowed, there is no equipment positioning information, location information will jump to the default location, also could lead to a map can't display.";
+NSPhotoLibraryUsageDescription = "The App need your approval to access photo album.";
