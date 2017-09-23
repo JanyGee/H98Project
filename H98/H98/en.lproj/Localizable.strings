@@ -32,3 +32,11 @@
 "input_wait_bind" = "请输入待绑定的设备串号";
 "scaning_code" = "扫描二维码";
 "scaning_label" = "将二维码图片对准扫描框即可自动扫描";
+"camera_access" = "Please allow to access your device's camera in \"Setting\"->\"Privacy\"->\"Camera\".";
+"baby_nick" = "宝贝的昵称";
+"baby_portrait" = "头像选择";
+"baby_sex" = "宝贝性别";
+"baby_birthday" = "宝贝的生日";
+"baby_height" = "宝贝身高";
+"baby_weight" = "宝贝体重";
+"step_aim" = "步数目标";

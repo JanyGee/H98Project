@@ -76,7 +76,7 @@ open class LBXScanViewController: UIViewController, UIImagePickerControllerDeleg
     {
         if(!LBXPermissions .isGetCameraPermission())
         {
-            showMsg(title: nil, message: NSLocalizedString("Please allow to access your album in \"Setting\"->\"Privacy\"->\"Photos\".", comment: "Photos access"))
+            showMsg(title: nil, message: NSLocalizedString("camera_access", comment: "Photos access"))
             //Please allow to access your album in "Setting"->"Privacy"->"Photos".
             return
         }
@@ -172,7 +172,7 @@ open class LBXScanViewController: UIViewController, UIImagePickerControllerDeleg
     {
         if(!LBXPermissions.isGetPhotoPermission())
         {
-            showMsg(title: nil, message: NSLocalizedString("Please allow to access your device's camera in \"Setting\"->\"Privacy\"->\"Camera\".", comment: "Camera access"))
+            showMsg(title: nil, message: NSLocalizedString("camera_access", comment: "Camera access"))
             //Please allow to access your device's camera in "Setting"->"Privacy"->"Camera".
             return
         }

@@ -32,6 +32,14 @@ class LYCodeViewController: LBXScanViewController {
         for result:LBXScanResult in arrayResult
         {
             print("%@",result.strScanned ?? "")
+            
+            guard let cls = NSClassFromString(Bundle.main.namespace() + "." + "LYDeviceInforViewController") as? UIViewController.Type else {
+                return
+            }
+            
+            let vc = cls.init()
+            vc.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+            self.present(vc, animated: true, completion: nil)
         }
     }
 }

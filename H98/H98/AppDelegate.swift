@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow()
         window?.backgroundColor = UIColor.black
-        let vc = NSClassFromString(Bundle.main.namespace() + "." + "LYLoginViewController") as! UIViewController.Type
+        let vc = NSClassFromString(Bundle.main.namespace() + "." + "LYDeviceInforViewController") as! UIViewController.Type
         window?.rootViewController = vc.init()
         window?.makeKeyAndVisible()
         return true

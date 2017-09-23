@@ -53,7 +53,7 @@ class LYTitleView: UIView {
         }
     }
     
-    func setButtonStateAndTitle(flag:Bool = false,img:String = "back_image",title:String) -> Void {
+    func setButtonStateAndTitle(flag:Bool = false,img:String = "back_image",title:String = "") -> Void {
         
         leftButton.isHidden = flag
         let image = UIImage(named: img)
