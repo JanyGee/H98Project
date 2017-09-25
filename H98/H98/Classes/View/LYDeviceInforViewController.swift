@@ -9,7 +9,7 @@
 import UIKit
 import YYKit
 
-class LYDeviceInforViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
+class LYDeviceInforViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UIScrollViewDelegate {
 
     lazy var titleView:LYTitleView = LYTitleView()
     lazy var titleLabel:YYLabel = YYLabel()
@@ -101,11 +101,11 @@ extension LYDeviceInforViewController{
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        print(scrollView.contentOffset.x)
     }
     
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        print((choiceView?.contentOffset.x)! / 280)
     }
 }
