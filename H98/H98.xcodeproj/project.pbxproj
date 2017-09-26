@@ -63,6 +63,26 @@
 		31867DFA1F79DB14008C95BD /* LYWeightCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31867DF91F79DB14008C95BD /* LYWeightCollectionViewCell.swift */; };
 		31867DFC1F79DB2A008C95BD /* LYStepsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31867DFB1F79DB2A008C95BD /* LYStepsCollectionViewCell.swift */; };
 		31867DFE1F79DB44008C95BD /* LYRelationshipCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31867DFD1F79DB44008C95BD /* LYRelationshipCollectionViewCell.swift */; };
+		31867E2A1F7A4220008C95BD /* BMKClusterAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = 31867E041F7A4220008C95BD /* BMKClusterAlgorithm.m */; };
+		31867E2B1F7A4220008C95BD /* BMKClusterItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 31867E061F7A4220008C95BD /* BMKClusterItem.m */; };
+		31867E2C1F7A4220008C95BD /* BMKClusterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31867E081F7A4220008C95BD /* BMKClusterManager.m */; };
+		31867E2D1F7A4220008C95BD /* BMKClusterQuadtree.m in Sources */ = {isa = PBXBuildFile; fileRef = 31867E0A1F7A4220008C95BD /* BMKClusterQuadtree.m */; };
+		31867E2E1F7A4220008C95BD /* DVPinAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31867E0C1F7A4220008C95BD /* DVPinAnnotationView.m */; };
+		31867E2F1F7A4220008C95BD /* FenceCentreAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 31867E0E1F7A4220008C95BD /* FenceCentreAnnotation.m */; };
+		31867E301F7A4220008C95BD /* GuiJiAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 31867E101F7A4220008C95BD /* GuiJiAnnotation.m */; };
+		31867E311F7A4220008C95BD /* JanyBaiduMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31867E121F7A4220008C95BD /* JanyBaiduMapView.m */; };
+		31867E321F7A4220008C95BD /* JanyGeoCodeSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 31867E141F7A4220008C95BD /* JanyGeoCodeSearch.m */; };
+		31867E331F7A4220008C95BD /* MovePointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 31867E161F7A4220008C95BD /* MovePointAnnotation.m */; };
+		31867E341F7A4220008C95BD /* MovePolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = 31867E181F7A4220008C95BD /* MovePolyline.m */; };
+		31867E351F7A4220008C95BD /* PaopaoCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31867E1A1F7A4220008C95BD /* PaopaoCustomView.m */; };
+		31867E361F7A4220008C95BD /* PointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 31867E1C1F7A4220008C95BD /* PointAnnotation.m */; };
+		31867E371F7A4220008C95BD /* UserLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 31867E1E1F7A4220008C95BD /* UserLocation.m */; };
+		31867E381F7A4220008C95BD /* JanyGoogleMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31867E211F7A4220008C95BD /* JanyGoogleMapView.m */; };
+		31867E391F7A4220008C95BD /* JanyBaseMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31867E231F7A4220008C95BD /* JanyBaseMapView.m */; };
+		31867E3A1F7A4220008C95BD /* JanyMAMapMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31867E261F7A4220008C95BD /* JanyMAMapMapView.m */; };
+		31867E3B1F7A4220008C95BD /* JZLocationConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 31867E291F7A4220008C95BD /* JZLocationConverter.m */; };
+		31867E3E1F7A4246008C95BD /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 31867E3D1F7A4246008C95BD /* Model.m */; };
+		31867E411F7A5707008C95BD /* LYMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31867E401F7A5707008C95BD /* LYMainView.swift */; };
 		31DBAC111F74B596001BF994 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 31DBAC0F1F74B596001BF994 /* LICENSE */; };
 		9ECAD8520D95732768DA2B43 /* Pods_H98.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B36D0279FA612485CC45A48 /* Pods_H98.framework */; };
 /* End PBXBuildFile section */
@@ -144,6 +164,45 @@
 		31867DF91F79DB14008C95BD /* LYWeightCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYWeightCollectionViewCell.swift; sourceTree = "<group>"; };
 		31867DFB1F79DB2A008C95BD /* LYStepsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYStepsCollectionViewCell.swift; sourceTree = "<group>"; };
 		31867DFD1F79DB44008C95BD /* LYRelationshipCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYRelationshipCollectionViewCell.swift; sourceTree = "<group>"; };
+		31867E031F7A4220008C95BD /* BMKClusterAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKClusterAlgorithm.h; sourceTree = "<group>"; };
+		31867E041F7A4220008C95BD /* BMKClusterAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKClusterAlgorithm.m; sourceTree = "<group>"; };
+		31867E051F7A4220008C95BD /* BMKClusterItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKClusterItem.h; sourceTree = "<group>"; };
+		31867E061F7A4220008C95BD /* BMKClusterItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKClusterItem.m; sourceTree = "<group>"; };
+		31867E071F7A4220008C95BD /* BMKClusterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKClusterManager.h; sourceTree = "<group>"; };
+		31867E081F7A4220008C95BD /* BMKClusterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKClusterManager.m; sourceTree = "<group>"; };
+		31867E091F7A4220008C95BD /* BMKClusterQuadtree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKClusterQuadtree.h; sourceTree = "<group>"; };
+		31867E0A1F7A4220008C95BD /* BMKClusterQuadtree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKClusterQuadtree.m; sourceTree = "<group>"; };
+		31867E0B1F7A4220008C95BD /* DVPinAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVPinAnnotationView.h; sourceTree = "<group>"; };
+		31867E0C1F7A4220008C95BD /* DVPinAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVPinAnnotationView.m; sourceTree = "<group>"; };
+		31867E0D1F7A4220008C95BD /* FenceCentreAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FenceCentreAnnotation.h; sourceTree = "<group>"; };
+		31867E0E1F7A4220008C95BD /* FenceCentreAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FenceCentreAnnotation.m; sourceTree = "<group>"; };
+		31867E0F1F7A4220008C95BD /* GuiJiAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiJiAnnotation.h; sourceTree = "<group>"; };
+		31867E101F7A4220008C95BD /* GuiJiAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuiJiAnnotation.m; sourceTree = "<group>"; };
+		31867E111F7A4220008C95BD /* JanyBaiduMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JanyBaiduMapView.h; sourceTree = "<group>"; };
+		31867E121F7A4220008C95BD /* JanyBaiduMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JanyBaiduMapView.m; sourceTree = "<group>"; };
+		31867E131F7A4220008C95BD /* JanyGeoCodeSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JanyGeoCodeSearch.h; sourceTree = "<group>"; };
+		31867E141F7A4220008C95BD /* JanyGeoCodeSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JanyGeoCodeSearch.m; sourceTree = "<group>"; };
+		31867E151F7A4220008C95BD /* MovePointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovePointAnnotation.h; sourceTree = "<group>"; };
+		31867E161F7A4220008C95BD /* MovePointAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovePointAnnotation.m; sourceTree = "<group>"; };
+		31867E171F7A4220008C95BD /* MovePolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovePolyline.h; sourceTree = "<group>"; };
+		31867E181F7A4220008C95BD /* MovePolyline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovePolyline.m; sourceTree = "<group>"; };
+		31867E191F7A4220008C95BD /* PaopaoCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaopaoCustomView.h; sourceTree = "<group>"; };
+		31867E1A1F7A4220008C95BD /* PaopaoCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaopaoCustomView.m; sourceTree = "<group>"; };
+		31867E1B1F7A4220008C95BD /* PointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointAnnotation.h; sourceTree = "<group>"; };
+		31867E1C1F7A4220008C95BD /* PointAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointAnnotation.m; sourceTree = "<group>"; };
+		31867E1D1F7A4220008C95BD /* UserLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLocation.h; sourceTree = "<group>"; };
+		31867E1E1F7A4220008C95BD /* UserLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLocation.m; sourceTree = "<group>"; };
+		31867E201F7A4220008C95BD /* JanyGoogleMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JanyGoogleMapView.h; sourceTree = "<group>"; };
+		31867E211F7A4220008C95BD /* JanyGoogleMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JanyGoogleMapView.m; sourceTree = "<group>"; };
+		31867E221F7A4220008C95BD /* JanyBaseMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JanyBaseMapView.h; sourceTree = "<group>"; };
+		31867E231F7A4220008C95BD /* JanyBaseMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JanyBaseMapView.m; sourceTree = "<group>"; };
+		31867E251F7A4220008C95BD /* JanyMAMapMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JanyMAMapMapView.h; sourceTree = "<group>"; };
+		31867E261F7A4220008C95BD /* JanyMAMapMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JanyMAMapMapView.m; sourceTree = "<group>"; };
+		31867E281F7A4220008C95BD /* JZLocationConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZLocationConverter.h; sourceTree = "<group>"; };
+		31867E291F7A4220008C95BD /* JZLocationConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZLocationConverter.m; sourceTree = "<group>"; };
+		31867E3C1F7A4246008C95BD /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		31867E3D1F7A4246008C95BD /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		31867E401F7A5707008C95BD /* LYMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYMainView.swift; sourceTree = "<group>"; };
 		31DBAC0F1F74B596001BF994 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		31DBAC101F74B596001BF994 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3B36D0279FA612485CC45A48 /* Pods_H98.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_H98.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -230,6 +289,7 @@
 		314BD82E1F74A3A20098F9A6 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				31867DFF1F7A4220008C95BD /* JanyMapManager */,
 				316D1F521F760CCE0004974D /* PageControl */,
 				3127AB1F1F750BC0003AC960 /* SwiftScan */,
 				314BD8761F74ABF00098F9A6 /* Additions(快速遍历构造) */,
@@ -261,6 +321,7 @@
 		314BD8301F74A3A20098F9A6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				31867E3F1F7A5687008C95BD /* MainPageView */,
 				316D1F561F762C760004974D /* CollectionCellAndLayout */,
 				314BD8611F74AB990098F9A6 /* LYCustomTopView.swift */,
 				314BD8621F74AB990098F9A6 /* LYScanView.swift */,
@@ -395,6 +456,107 @@
 				31867DFD1F79DB44008C95BD /* LYRelationshipCollectionViewCell.swift */,
 			);
 			name = CollectionCellAndLayout;
+			sourceTree = "<group>";
+		};
+		31867DFF1F7A4220008C95BD /* JanyMapManager */ = {
+			isa = PBXGroup;
+			children = (
+				31867E3C1F7A4246008C95BD /* Model.h */,
+				31867E3D1F7A4246008C95BD /* Model.m */,
+				31867E001F7A4220008C95BD /* Base */,
+			);
+			path = JanyMapManager;
+			sourceTree = "<group>";
+		};
+		31867E001F7A4220008C95BD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				31867E221F7A4220008C95BD /* JanyBaseMapView.h */,
+				31867E231F7A4220008C95BD /* JanyBaseMapView.m */,
+				31867E011F7A4220008C95BD /* Baidu */,
+				31867E1F1F7A4220008C95BD /* Google */,
+				31867E241F7A4220008C95BD /* MAMap */,
+				31867E271F7A4220008C95BD /* Tools */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		31867E011F7A4220008C95BD /* Baidu */ = {
+			isa = PBXGroup;
+			children = (
+				31867E021F7A4220008C95BD /* Cluster */,
+				31867E0B1F7A4220008C95BD /* DVPinAnnotationView.h */,
+				31867E0C1F7A4220008C95BD /* DVPinAnnotationView.m */,
+				31867E0D1F7A4220008C95BD /* FenceCentreAnnotation.h */,
+				31867E0E1F7A4220008C95BD /* FenceCentreAnnotation.m */,
+				31867E0F1F7A4220008C95BD /* GuiJiAnnotation.h */,
+				31867E101F7A4220008C95BD /* GuiJiAnnotation.m */,
+				31867E111F7A4220008C95BD /* JanyBaiduMapView.h */,
+				31867E121F7A4220008C95BD /* JanyBaiduMapView.m */,
+				31867E131F7A4220008C95BD /* JanyGeoCodeSearch.h */,
+				31867E141F7A4220008C95BD /* JanyGeoCodeSearch.m */,
+				31867E151F7A4220008C95BD /* MovePointAnnotation.h */,
+				31867E161F7A4220008C95BD /* MovePointAnnotation.m */,
+				31867E171F7A4220008C95BD /* MovePolyline.h */,
+				31867E181F7A4220008C95BD /* MovePolyline.m */,
+				31867E191F7A4220008C95BD /* PaopaoCustomView.h */,
+				31867E1A1F7A4220008C95BD /* PaopaoCustomView.m */,
+				31867E1B1F7A4220008C95BD /* PointAnnotation.h */,
+				31867E1C1F7A4220008C95BD /* PointAnnotation.m */,
+				31867E1D1F7A4220008C95BD /* UserLocation.h */,
+				31867E1E1F7A4220008C95BD /* UserLocation.m */,
+			);
+			path = Baidu;
+			sourceTree = "<group>";
+		};
+		31867E021F7A4220008C95BD /* Cluster */ = {
+			isa = PBXGroup;
+			children = (
+				31867E031F7A4220008C95BD /* BMKClusterAlgorithm.h */,
+				31867E041F7A4220008C95BD /* BMKClusterAlgorithm.m */,
+				31867E051F7A4220008C95BD /* BMKClusterItem.h */,
+				31867E061F7A4220008C95BD /* BMKClusterItem.m */,
+				31867E071F7A4220008C95BD /* BMKClusterManager.h */,
+				31867E081F7A4220008C95BD /* BMKClusterManager.m */,
+				31867E091F7A4220008C95BD /* BMKClusterQuadtree.h */,
+				31867E0A1F7A4220008C95BD /* BMKClusterQuadtree.m */,
+			);
+			path = Cluster;
+			sourceTree = "<group>";
+		};
+		31867E1F1F7A4220008C95BD /* Google */ = {
+			isa = PBXGroup;
+			children = (
+				31867E201F7A4220008C95BD /* JanyGoogleMapView.h */,
+				31867E211F7A4220008C95BD /* JanyGoogleMapView.m */,
+			);
+			path = Google;
+			sourceTree = "<group>";
+		};
+		31867E241F7A4220008C95BD /* MAMap */ = {
+			isa = PBXGroup;
+			children = (
+				31867E251F7A4220008C95BD /* JanyMAMapMapView.h */,
+				31867E261F7A4220008C95BD /* JanyMAMapMapView.m */,
+			);
+			path = MAMap;
+			sourceTree = "<group>";
+		};
+		31867E271F7A4220008C95BD /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				31867E281F7A4220008C95BD /* JZLocationConverter.h */,
+				31867E291F7A4220008C95BD /* JZLocationConverter.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		31867E3F1F7A5687008C95BD /* MainPageView */ = {
+			isa = PBXGroup;
+			children = (
+				31867E401F7A5707008C95BD /* LYMainView.swift */,
+			);
+			name = MainPageView;
 			sourceTree = "<group>";
 		};
 		BCFA695579FEA097A50B1E8D /* Frameworks */ = {
@@ -564,46 +726,65 @@
 				3127AB2A1F750BC0003AC960 /* LBXScanView.swift in Sources */,
 				314BD8701F74ABBD0098F9A6 /* UIView+Extension.swift in Sources */,
 				314BD8951F74AC030098F9A6 /* UILabel+CZAddition.m in Sources */,
+				31867E3E1F7A4246008C95BD /* Model.m in Sources */,
 				314BD8681F74AB990098F9A6 /* LYScanView.swift in Sources */,
 				316D1F511F75F86D0004974D /* LYDeviceInforViewController.swift in Sources */,
 				314BD86F1F74ABBD0098F9A6 /* Bundle+Extension.swift in Sources */,
+				31867E3A1F7A4220008C95BD /* JanyMAMapMapView.m in Sources */,
 				31867DFA1F79DB14008C95BD /* LYWeightCollectionViewCell.swift in Sources */,
 				314BD8671F74AB990098F9A6 /* LYCustomTopView.swift in Sources */,
 				314BD8911F74AC030098F9A6 /* NSObject+CZAddition.m in Sources */,
 				314BD8721F74ABCD0098F9A6 /* LYRequestManager.swift in Sources */,
 				314BD8901F74AC030098F9A6 /* NSAttributedString+CZAdditon.m in Sources */,
 				314BD86C1F74AB990098F9A6 /* LYTxtView.swift in Sources */,
+				31867E341F7A4220008C95BD /* MovePolyline.m in Sources */,
 				314BD8161F74A2950098F9A6 /* AppDelegate.swift in Sources */,
 				314BD88F1F74AC030098F9A6 /* NSArray+Log.m in Sources */,
 				314BD85E1F74AB860098F9A6 /* LYBindleViewController.swift in Sources */,
 				314BD8591F74AB7A0098F9A6 /* LYRegistViewController.swift in Sources */,
 				314BD8961F74AC030098F9A6 /* UIScreen+CZAddition.m in Sources */,
 				3127AB2D1F750BC0003AC960 /* LBXScanWrapper.swift in Sources */,
+				31867E321F7A4220008C95BD /* JanyGeoCodeSearch.m in Sources */,
 				314BD84A1F74AB490098F9A6 /* JanyBaseViewController.swift in Sources */,
 				314BD8601F74AB860098F9A6 /* LYInputViewController.swift in Sources */,
 				314BD8571F74AB7A0098F9A6 /* LYForgetViewController.swift in Sources */,
 				31867DFE1F79DB44008C95BD /* LYRelationshipCollectionViewCell.swift in Sources */,
+				31867E351F7A4220008C95BD /* PaopaoCustomView.m in Sources */,
 				31867DF61F79DAE6008C95BD /* LYBirthdayCollectionViewCell.swift in Sources */,
 				314BD84E1F74AB560098F9A6 /* LYHomeViewController.swift in Sources */,
 				314BD84B1F74AB490098F9A6 /* JanyMainViewController.swift in Sources */,
 				3127AB2B1F750BC0003AC960 /* LBXScanViewController.swift in Sources */,
 				314BD85F1F74AB860098F9A6 /* LYCodeViewController.swift in Sources */,
+				31867E2E1F7A4220008C95BD /* DVPinAnnotationView.m in Sources */,
+				31867E371F7A4220008C95BD /* UserLocation.m in Sources */,
+				31867E311F7A4220008C95BD /* JanyBaiduMapView.m in Sources */,
 				314BD8501F74AB630098F9A6 /* LYInteractiveViewController.swift in Sources */,
 				314BD8921F74AC030098F9A6 /* NSString+Hash.m in Sources */,
+				31867E2C1F7A4220008C95BD /* BMKClusterManager.m in Sources */,
 				314BD8941F74AC030098F9A6 /* UIColor+CZAddition.m in Sources */,
+				31867E331F7A4220008C95BD /* MovePointAnnotation.m in Sources */,
+				31867E411F7A5707008C95BD /* LYMainView.swift in Sources */,
+				31867E381F7A4220008C95BD /* JanyGoogleMapView.m in Sources */,
 				31867DFC1F79DB2A008C95BD /* LYStepsCollectionViewCell.swift in Sources */,
+				31867E2A1F7A4220008C95BD /* BMKClusterAlgorithm.m in Sources */,
 				314BD8581F74AB7A0098F9A6 /* LYLoginViewController.swift in Sources */,
+				31867E2B1F7A4220008C95BD /* BMKClusterItem.m in Sources */,
+				31867E361F7A4220008C95BD /* PointAnnotation.m in Sources */,
 				314BD8981F74AC030098F9A6 /* UIViewController+CZAddition.m in Sources */,
 				31867DF21F79DAB6008C95BD /* LYInputNameCollectionViewCell.swift in Sources */,
+				31867E391F7A4220008C95BD /* JanyBaseMapView.m in Sources */,
 				314BD8931F74AC030098F9A6 /* UIButton+CZAddition.m in Sources */,
 				314BD8521F74AB6C0098F9A6 /* LYMineViewController.swift in Sources */,
 				3127AB271F750BC0003AC960 /* LBXPermissions.swift in Sources */,
 				316D1F5A1F763E2A0004974D /* LYPortraitCollectionViewCell.swift in Sources */,
 				314BD8691F74AB990098F9A6 /* LYSecondLoginView.swift in Sources */,
 				31867DF81F79DAFF008C95BD /* LYHeightCollectionViewCell.swift in Sources */,
+				31867E3B1F7A4220008C95BD /* JZLocationConverter.m in Sources */,
 				314BD85A1F74AB7A0098F9A6 /* LYResetViewController.swift in Sources */,
 				31867DF41F79DAD4008C95BD /* LYSexCollectionViewCell.swift in Sources */,
 				3127AB2C1F750BC0003AC960 /* LBXScanViewStyle.swift in Sources */,
+				31867E301F7A4220008C95BD /* GuiJiAnnotation.m in Sources */,
+				31867E2F1F7A4220008C95BD /* FenceCentreAnnotation.m in Sources */,
 				3127AB291F750BC0003AC960 /* LBXScanNetAnimation.swift in Sources */,
 				31867DF01F79D729008C95BD /* RequestManager.m in Sources */,
 				316D1F581F762D150004974D /* LYCustomLayout.swift in Sources */,
@@ -614,6 +795,7 @@
 				314BD86B1F74AB990098F9A6 /* LYTxtCodeView.swift in Sources */,
 				31867DEF1F79D729008C95BD /* GetNetWorkState.m in Sources */,
 				314BD8971F74AC030098F9A6 /* UIView+CZAddition.m in Sources */,
+				31867E2D1F7A4220008C95BD /* BMKClusterQuadtree.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

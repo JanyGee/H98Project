@@ -3,3 +3,6 @@
 //
 #import "CZAdditions.h"
 #import <AFNetworking/AFNetworking.h>
+#import "JanyBaseMapView.h"
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>
+#import <GoogleMaps/GMSServices.h>

@@ -49,10 +49,8 @@ typedef enum {
 
 /**
 *启动引擎
-*@param key 申请的有效key
-*@param delegate 
 */
--(BOOL)start:(NSString*)key generalDelegate:(id<BMKGeneralDelegate>)delegate;
+-(BOOL)start:(NSString *)key generalDelegate:(id<BMKGeneralDelegate>)delegate;
 
 /**
  *获取所有在线服务消耗的发送流量,单位：字节

@@ -95,7 +95,6 @@ class LYCustomLayout: UICollectionViewFlowLayout {
         
         let array = super.layoutAttributesForElements(in: targetRect)
         
-        
         for layoutAttr:UICollectionViewLayoutAttributes in array! {
             
             let itemCenterX = layoutAttr.center.x

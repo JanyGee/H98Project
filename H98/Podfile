@@ -10,6 +10,5 @@ target 'H98'do
     pod 'YYModel'
     pod 'YYKit'
     pod 'AFNetworking'
-    
     #pod 'LBXScan/LBXNative'#原生二维码扫描pod 'swiftScan'
 end

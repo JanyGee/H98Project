@@ -10,6 +10,8 @@ import UIKit
 
 class LYHomeViewController: UIViewController {
 
+    lazy var map:JanyBaseMapView = JanyBaseMapView()
+    
     lazy var btn:UIButton = UIButton()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,14 +20,39 @@ class LYHomeViewController: UIViewController {
         view.backgroundColor = UIColor.white
         
         //loginView()
-        
+        setupUI()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.isHidden = true
     }
+    
     override func viewWillDisappear(_ animated: Bool) {
         navigationController?.navigationBar.isHidden = false
+    }
+}
+
+extension LYHomeViewController{
+
+    //MARK: UI
+    fileprivate func setupUI() -> Void {
+        
+        view.addSubview(map)
+        
+        map.snp.makeConstraints { (make) in
+            make.left.equalTo(0)
+            make.right.equalTo(0)
+            make.top.equalTo(0)
+            make.bottom.equalTo(0)
+        }
+        map.startLocationSuccess({
+            
+            self.map.stopLocation()
+            
+        }) { (error) in
+
+        
+        }
     }
     
     //MARK: 登录测试
