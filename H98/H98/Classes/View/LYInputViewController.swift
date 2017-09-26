@@ -46,7 +46,7 @@ class LYInputViewController: UIViewController {
         view.addSubview(txtField)
         view.addSubview(bindButton)
         
-        bkImageView.backgroundColor = UIColor.cz_random()
+        bkImageView.backgroundColor = UIColor.cz_color(withHex: 0x6a30f5)
         bkImageView.snp.makeConstraints { (make) in
             make.top.equalTo(0)
             make.bottom.equalTo(0)
@@ -73,9 +73,9 @@ class LYInputViewController: UIViewController {
             make.right.equalTo(-10)
             make.bottom.equalTo(self.view.snp.centerY).offset(40)
         }
-        inputNumberView.setUIWithData(img: "", titleStr: NSLocalizedString("input_number_bind", comment: "输入设备串号绑定"), flag: false, description: NSLocalizedString("introduce", comment: "请查看手表说明书"))
+        inputNumberView.setUIWithData(img: "chuanhao", titleStr: NSLocalizedString("input_number_bind", comment: "输入设备串号绑定"), flag: false, description: NSLocalizedString("introduce", comment: "请查看手表说明书"))
         
-        txtField.backgroundColor = UIColor.cz_random()
+        //txtField.backgroundColor = UIColor.cz_random()
         txtField.setTextFieldType(type: .numberPad)
         txtField.setTxtPlaceHolder(place: NSLocalizedString("input_wait_bind", comment: "请输入待绑定的设备串号"))
         txtField.snp.makeConstraints { (make) in
@@ -86,15 +86,17 @@ class LYInputViewController: UIViewController {
             make.height.equalTo(50)
         }
         
-        bindButton.backgroundColor = UIColor.cz_random()
+        //bindButton.backgroundColor = UIColor.cz_random()
         bindButton.setTitleColor(UIColor.white, for: .normal)
+        bindButton.titleLabel?.font = UIFont.systemFont(ofSize: 20)
+        bindButton.setBackgroundImage(UIImage(named:"Next"), for: .normal)
         bindButton.setTitle(NSLocalizedString("bind", comment: "绑定"), for: .normal)
         bindButton.addTarget(self, action: #selector(bindButtonClick), for: .touchUpInside)
         bindButton.snp.makeConstraints { (make) in
             make.bottom.equalTo(self.view.snp.bottom).offset(-20)
-            make.left.equalTo(50)
-            make.right.equalTo(-50)
-            make.height.equalTo(60)
+            make.left.equalTo(30)
+            make.right.equalTo(-30)
+            make.height.equalTo(55)
         }
     }
 }

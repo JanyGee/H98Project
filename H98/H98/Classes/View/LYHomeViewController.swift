@@ -10,15 +10,25 @@ import UIKit
 
 class LYHomeViewController: UIViewController {
 
+    lazy var btn:UIButton = UIButton()
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        view.backgroundColor = UIColor.cz_random()
+        view.backgroundColor = UIColor.white
         
-        loginView()
+        //loginView()
+        
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = true
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = false
+    }
+    
+    //MARK: 登录测试
     func loginView() {
         
         guard let cls = NSClassFromString(Bundle.main.namespace() + "." + "LYLoginViewController") as? UIViewController.Type else {

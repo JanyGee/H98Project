@@ -249,6 +249,7 @@ extension LBXScanViewController{
         view.addSubview(titleView)
         view.addSubview(reminderLabel)
         
+        titleView.backgroundColor = UIColor.cz_color(withHex: 0x6a30f5)
         titleView.snp.makeConstraints { (make) in
             
             make.left.equalTo(0)

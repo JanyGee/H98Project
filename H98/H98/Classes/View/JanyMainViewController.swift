@@ -26,9 +26,9 @@ extension JanyMainViewController{
     func setupChildControllers() {
         
         let array = [
-            ["clsName":"LYHomeViewController","title":NSLocalizedString("first_Page", comment: "first_Page"),"imageName":"name"],
-            ["clsName":"LYInteractiveViewController","title":NSLocalizedString("Interactive", comment: "Interactive"),"imageName":"name"],
-            ["clsName":"LYMineViewController","title":NSLocalizedString("mine", comment: "mine"),"imageName":"name"],
+            ["clsName":"LYHomeViewController","title":NSLocalizedString("first_Page", comment: "first_Page"),"imageName":"homepage"],
+            ["clsName":"LYInteractiveViewController","title":NSLocalizedString("Interactive", comment: "Interactive"),"imageName":"nteraction"],
+            ["clsName":"LYMineViewController","title":NSLocalizedString("mine", comment: "mine"),"imageName":"me"],
                      ]
         
         var arrayM = [UIViewController]()
@@ -58,9 +58,9 @@ extension JanyMainViewController{
         
         vc.title = title
         vc.tabBarItem.image = UIImage(named: imageName)
-        vc.tabBarItem.selectedImage = UIImage(named: "" + imageName)?.withRenderingMode(.alwaysOriginal)
+        vc.tabBarItem.selectedImage = UIImage(named: imageName + "Selected")?.withRenderingMode(.alwaysOriginal)
         
-        vc.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName:UIColor.orange], for: .highlighted)
+        vc.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName:UIColor.cz_color(withHex: 0x6a30f5)], for: .highlighted)
         vc.tabBarItem.setTitleTextAttributes([NSFontAttributeName:UIFont.systemFont(ofSize: 12)], for: .normal)
         let nav = JanyNavigationController(rootViewController: vc)
         

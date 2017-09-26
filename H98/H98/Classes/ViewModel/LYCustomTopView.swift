@@ -48,7 +48,7 @@ class LYCustomTopView: UIView {
         addSubview(leftButton)
         addSubview(titleLabel)
         
-        bkImageView.backgroundColor = UIColor.cz_random()
+        //bkImageView.backgroundColor = UIColor.cz_random()
         bkImageView.snp.makeConstraints { (make) in
             make.top.equalTo(0)
             make.bottom.equalTo(0)
@@ -57,7 +57,7 @@ class LYCustomTopView: UIView {
         }
         
         //leftButton.backgroundColor = UIColor.cz_random()
-        leftButton.setBackgroundImage(UIImage(named: "back_image"), for:.normal)
+        leftButton.setBackgroundImage(UIImage(named: "back_w"), for:.normal)
         leftButton.addTarget(self, action: #selector(leftButtonClick), for: .touchUpInside)
         leftButton.snp.makeConstraints { (make) in
             

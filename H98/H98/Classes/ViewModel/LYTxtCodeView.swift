@@ -32,8 +32,8 @@ class LYTxtCodeView: UIView {
         addSubview(codeButton)
         
         txt.borderStyle = .none
-        txt.textColor = UIColor.white
-        txt.backgroundColor = UIColor.cz_random()
+        txt.textColor = UIColor.black
+        //txt.backgroundColor = UIColor.cz_random()
         txt.snp.makeConstraints { (make) in
             make.left.equalTo(0)
             make.top.equalTo(0)
@@ -41,15 +41,15 @@ class LYTxtCodeView: UIView {
             make.bottom.equalTo(-5)
         }
         
-        vLineView.backgroundColor = UIColor.white
+        vLineView.backgroundColor = UIColor.lightGray
         vLineView.snp.makeConstraints { (make) in
             make.left.equalTo(txt.snp.right)
             make.top.equalTo(5)
-            make.bottom.equalTo(-5)
+            make.bottom.equalTo(-8)
             make.width.equalTo(0.5)
         }
         
-        hLineView.backgroundColor = UIColor.white
+        hLineView.backgroundColor = UIColor.lightGray
         hLineView.snp.makeConstraints { (make) in
             make.left.equalTo(0)
             make.bottom.equalTo(0)
@@ -57,10 +57,10 @@ class LYTxtCodeView: UIView {
             make.height.equalTo(1)
         }
         
-        codeButton.backgroundColor = UIColor.cz_random()
+        //codeButton.backgroundColor = UIColor.cz_random()
+        codeButton.setTitleColor(UIColor.lightGray, for: .normal)
         codeButton.setTitle(NSLocalizedString("send_code", comment: "发送验证码"), for: .normal)
         codeButton.titleLabel?.font = UIFont.systemFont(ofSize: 13)
-        codeButton.setTitleColor(UIColor.white, for: .normal)
         codeButton.snp.makeConstraints { (make) in
             make.left.equalTo(vLineView.snp.right)
             make.top.equalTo(0)

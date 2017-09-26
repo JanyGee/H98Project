@@ -28,8 +28,9 @@ class LYTxtView: UIView {
         addSubview(hLineView)
         
         txt.borderStyle = .none
-        txt.textColor = UIColor.white
-        txt.backgroundColor = UIColor.cz_random()
+        txt.clearButtonMode = .whileEditing
+        txt.textColor = UIColor.black
+        //txt.backgroundColor = UIColor.cz_random()
         txt.snp.makeConstraints { (make) in
             make.left.equalTo(0)
             make.top.equalTo(0)
@@ -37,7 +38,7 @@ class LYTxtView: UIView {
             make.bottom.equalTo(-5)
         }
         
-        hLineView.backgroundColor = UIColor.white
+        hLineView.backgroundColor = UIColor.lightGray
         hLineView.snp.makeConstraints { (make) in
             make.left.equalTo(0)
             make.bottom.equalTo(0)

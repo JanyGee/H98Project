@@ -20,7 +20,7 @@ class LYBindleViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        view.backgroundColor = UIColor.cz_color(withHex: 0xff6852)
+        view.backgroundColor = UIColor.cz_color(withHex: 0x6a30f5)
         
         setupUI()
     }
@@ -39,7 +39,8 @@ extension LYBindleViewController{
         view.addSubview(scanView)
         view.addSubview(inputNumberView)
         
-        bkImageView.backgroundColor = UIColor.cz_random()
+        //bkImageView.backgroundColor = UIColor.cz_random()
+        //bkImageView.image = UIImage(named: "")
         bkImageView.snp.makeConstraints { (make) in
             make.top.equalTo(0)
             make.bottom.equalTo(0)
@@ -60,7 +61,7 @@ extension LYBindleViewController{
         }
         
         scanView.heroID = "scanView"
-        scanView.setUIWithData(img: "", titleStr: NSLocalizedString("scan_for_bind", comment: "扫描设备二维码绑定"))
+        scanView.setUIWithData(img: "saomiao", titleStr: NSLocalizedString("scan_for_bind", comment: "扫描设备二维码绑定"))
         scanView.snp.makeConstraints { (make) in
             make.top.equalTo(titleView.snp.bottom).offset(24)
             make.left.equalTo(10)
@@ -80,7 +81,7 @@ extension LYBindleViewController{
         }
         
         inputNumberView.heroID = "input"
-        inputNumberView.setUIWithData(img: "", titleStr: NSLocalizedString("input_number_bind", comment: "输入设备串号绑定"))
+        inputNumberView.setUIWithData(img: "chuanhao", titleStr: NSLocalizedString("input_number_bind", comment: "输入设备串号绑定"))
         inputNumberView.snp.makeConstraints { (make) in
             make.top.equalTo(scanView.snp.bottom).offset(10)
             make.left.equalTo(10)

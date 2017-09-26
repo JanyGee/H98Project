@@ -11,6 +11,7 @@ import Hero
 
 class LYForgetViewController: UIViewController {
 
+    private lazy var bkImageView:UIImageView = UIImageView()
     private lazy var titleView:LYTitleView = LYTitleView()
     private lazy var txtField:LYTxtView = LYTxtView()
     private lazy var txtCode:LYTxtCodeView = LYTxtCodeView()
@@ -19,7 +20,7 @@ class LYForgetViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        view.backgroundColor = UIColor.cz_color(withHex: 0xff6852)
+        view.backgroundColor = UIColor.white
         
         setupUI()
     }
@@ -41,13 +42,22 @@ class LYForgetViewController: UIViewController {
         
         isHeroEnabled = true
         
+        view.addSubview(bkImageView)
         view.addSubview(titleView)
         view.addSubview(txtField)
         view.addSubview(txtCode)
         view.addSubview(nextButton)
         
+        bkImageView.image = UIImage(named: "FORGETPASSWORD")
+        bkImageView.snp.makeConstraints { (make) in
+            make.left.equalTo(0)
+            make.right.equalTo(0)
+            make.top.equalTo(0)
+            make.bottom.equalTo(0)
+        }
+        
         titleView.heroID = "fog"
-        titleView.setButtonStateAndTitle(flag: false, title: NSLocalizedString("forget_pwd", comment: "忘记密码"))
+        titleView.setButtonStateAndTitle(flag: false, img:"back", title: "")
         titleView.snp.makeConstraints { (make) in
             make.left.equalTo(0)
             make.right.equalTo(0)
@@ -60,7 +70,7 @@ class LYForgetViewController: UIViewController {
         }
         
         txtField.heroID = "count"
-        txtField.backgroundColor = UIColor.cz_random()
+        //txtField.backgroundColor = UIColor.cz_random()
         txtField.setTxtPlaceHolder(place: NSLocalizedString("input_email_or_iphone", comment: "输入邮箱或者密码"))
         txtField.snp.makeConstraints { (make) in
             
@@ -71,7 +81,7 @@ class LYForgetViewController: UIViewController {
         }
         
         txtCode.heroID = "code"
-        txtCode.backgroundColor = UIColor.cz_random()
+        //txtCode.backgroundColor = UIColor.cz_random()
         txtCode.setTxtPlaceHolder(place: NSLocalizedString("input_code", comment: "输入验证码"))
         txtCode.snp.makeConstraints { (make) in
             make.top.equalTo(txtField.snp.bottom).offset(10)
@@ -81,15 +91,18 @@ class LYForgetViewController: UIViewController {
         }
         
         nextButton.heroID = "log"
-        nextButton.backgroundColor = UIColor.cz_random()
+        //nextButton.backgroundColor = UIColor.cz_random()
         nextButton.setTitleColor(UIColor.white, for: .normal)
+        nextButton.titleEdgeInsets = UIEdgeInsetsMake(-5, 0, 0, 0)
+        nextButton.titleLabel?.font = UIFont.systemFont(ofSize: 20)
+        nextButton.setBackgroundImage(UIImage(named:"login_next"), for: .normal)
         nextButton.setTitle(NSLocalizedString("next", comment: "下一步"), for: .normal)
         nextButton.addTarget(self, action: #selector(nextButtonClick), for: .touchUpInside)
         nextButton.snp.makeConstraints { (make) in
             make.top.equalTo(txtCode.snp.bottom).offset(80)
             make.left.equalTo(50)
             make.right.equalTo(-50)
-            make.height.equalTo(50)
+            make.height.equalTo(55)
         }
     }
 }

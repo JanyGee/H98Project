@@ -14,7 +14,17 @@ class LYInteractiveViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        view.backgroundColor = UIColor.cz_random()
+        
+        setupUI()
     }
 
+}
+
+extension LYInteractiveViewController{
+
+    //MARK: UI
+    fileprivate func setupUI() -> Void {
+        view.backgroundColor = UIColor.cz_random()
+        navigationItem.title = NSLocalizedString("message", comment: "消息")
+    }
 }

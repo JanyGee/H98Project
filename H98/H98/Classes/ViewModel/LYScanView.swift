@@ -46,9 +46,9 @@ class LYScanView: UIView {
         addSubview(title)
         addSubview(descriptionBtn)
         
-        backgroundColor = UIColor.white
+        //backgroundColor = UIColor.white
         
-        bkImageView.image = UIImage(named: "")
+        bkImageView.image = UIImage(named: "bg")
         bkImageView.snp.makeConstraints { (make) in
             make.top.equalTo(0)
             make.bottom.equalTo(0)
@@ -56,7 +56,8 @@ class LYScanView: UIView {
             make.right.equalTo(0)
         }
         
-        imgView.backgroundColor = UIColor.cz_random()
+        //imgView.backgroundColor = UIColor.cz_random()
+        //imgView.image = UIImage(named: "saomiao")
         imgView.snp.makeConstraints { (make) in
             make.centerX.equalTo(self.snp.centerX)
             make.centerY.equalTo(self.snp.centerY).offset(-35)
@@ -64,7 +65,7 @@ class LYScanView: UIView {
             make.height.equalTo(80)
         }
         
-        title.backgroundColor = UIColor.cz_random()
+        //title.backgroundColor = UIColor.cz_random()
         title.textAlignment = .center
         title.textColor = UIColor.darkGray
         title.font = UIFont.systemFont(ofSize: 18)
@@ -75,7 +76,7 @@ class LYScanView: UIView {
             make.height.equalTo(40)
         }
         
-        descriptionBtn.backgroundColor = UIColor.cz_random()
+        //descriptionBtn.backgroundColor = UIColor.cz_random()
         descriptionBtn.setTitle(NSLocalizedString("introduce", comment: "请查看手表说明书"), for: .normal)
         descriptionBtn.titleLabel?.font = UIFont.systemFont(ofSize: 13)
         descriptionBtn.setTitleColor(UIColor.lightGray, for: .normal)

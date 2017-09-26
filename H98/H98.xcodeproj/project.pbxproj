@@ -54,6 +54,15 @@
 		316D1F511F75F86D0004974D /* LYDeviceInforViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316D1F501F75F86D0004974D /* LYDeviceInforViewController.swift */; };
 		316D1F581F762D150004974D /* LYCustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316D1F571F762D150004974D /* LYCustomLayout.swift */; };
 		316D1F5A1F763E2A0004974D /* LYPortraitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316D1F591F763E2A0004974D /* LYPortraitCollectionViewCell.swift */; };
+		31867DEF1F79D729008C95BD /* GetNetWorkState.m in Sources */ = {isa = PBXBuildFile; fileRef = 31867DEC1F79D729008C95BD /* GetNetWorkState.m */; };
+		31867DF01F79D729008C95BD /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31867DEE1F79D729008C95BD /* RequestManager.m */; };
+		31867DF21F79DAB6008C95BD /* LYInputNameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31867DF11F79DAB6008C95BD /* LYInputNameCollectionViewCell.swift */; };
+		31867DF41F79DAD4008C95BD /* LYSexCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31867DF31F79DAD4008C95BD /* LYSexCollectionViewCell.swift */; };
+		31867DF61F79DAE6008C95BD /* LYBirthdayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31867DF51F79DAE6008C95BD /* LYBirthdayCollectionViewCell.swift */; };
+		31867DF81F79DAFF008C95BD /* LYHeightCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31867DF71F79DAFF008C95BD /* LYHeightCollectionViewCell.swift */; };
+		31867DFA1F79DB14008C95BD /* LYWeightCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31867DF91F79DB14008C95BD /* LYWeightCollectionViewCell.swift */; };
+		31867DFC1F79DB2A008C95BD /* LYStepsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31867DFB1F79DB2A008C95BD /* LYStepsCollectionViewCell.swift */; };
+		31867DFE1F79DB44008C95BD /* LYRelationshipCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31867DFD1F79DB44008C95BD /* LYRelationshipCollectionViewCell.swift */; };
 		31DBAC111F74B596001BF994 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 31DBAC0F1F74B596001BF994 /* LICENSE */; };
 		9ECAD8520D95732768DA2B43 /* Pods_H98.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B36D0279FA612485CC45A48 /* Pods_H98.framework */; };
 /* End PBXBuildFile section */
@@ -124,6 +133,17 @@
 		316D1F501F75F86D0004974D /* LYDeviceInforViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYDeviceInforViewController.swift; sourceTree = "<group>"; };
 		316D1F571F762D150004974D /* LYCustomLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYCustomLayout.swift; sourceTree = "<group>"; };
 		316D1F591F763E2A0004974D /* LYPortraitCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYPortraitCollectionViewCell.swift; sourceTree = "<group>"; };
+		31867DEB1F79D729008C95BD /* GetNetWorkState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetNetWorkState.h; sourceTree = "<group>"; };
+		31867DEC1F79D729008C95BD /* GetNetWorkState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetNetWorkState.m; sourceTree = "<group>"; };
+		31867DED1F79D729008C95BD /* RequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestManager.h; sourceTree = "<group>"; };
+		31867DEE1F79D729008C95BD /* RequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestManager.m; sourceTree = "<group>"; };
+		31867DF11F79DAB6008C95BD /* LYInputNameCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYInputNameCollectionViewCell.swift; sourceTree = "<group>"; };
+		31867DF31F79DAD4008C95BD /* LYSexCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYSexCollectionViewCell.swift; sourceTree = "<group>"; };
+		31867DF51F79DAE6008C95BD /* LYBirthdayCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYBirthdayCollectionViewCell.swift; sourceTree = "<group>"; };
+		31867DF71F79DAFF008C95BD /* LYHeightCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYHeightCollectionViewCell.swift; sourceTree = "<group>"; };
+		31867DF91F79DB14008C95BD /* LYWeightCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYWeightCollectionViewCell.swift; sourceTree = "<group>"; };
+		31867DFB1F79DB2A008C95BD /* LYStepsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYStepsCollectionViewCell.swift; sourceTree = "<group>"; };
+		31867DFD1F79DB44008C95BD /* LYRelationshipCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYRelationshipCollectionViewCell.swift; sourceTree = "<group>"; };
 		31DBAC0F1F74B596001BF994 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		31DBAC101F74B596001BF994 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3B36D0279FA612485CC45A48 /* Pods_H98.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_H98.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -216,6 +236,10 @@
 				314BD86D1F74ABBD0098F9A6 /* Bundle+Extension.swift */,
 				314BD86E1F74ABBD0098F9A6 /* UIView+Extension.swift */,
 				314BD8711F74ABCD0098F9A6 /* LYRequestManager.swift */,
+				31867DEB1F79D729008C95BD /* GetNetWorkState.h */,
+				31867DEC1F79D729008C95BD /* GetNetWorkState.m */,
+				31867DED1F79D729008C95BD /* RequestManager.h */,
+				31867DEE1F79D729008C95BD /* RequestManager.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -294,10 +318,10 @@
 		314BD8451F74AA9E0098F9A6 /* Login(登录) */ = {
 			isa = PBXGroup;
 			children = (
-				314BD8531F74AB7A0098F9A6 /* LYForgetViewController.swift */,
 				314BD8541F74AB7A0098F9A6 /* LYLoginViewController.swift */,
-				314BD8551F74AB7A0098F9A6 /* LYRegistViewController.swift */,
+				314BD8531F74AB7A0098F9A6 /* LYForgetViewController.swift */,
 				314BD8561F74AB7A0098F9A6 /* LYResetViewController.swift */,
+				314BD8551F74AB7A0098F9A6 /* LYRegistViewController.swift */,
 			);
 			name = "Login(登录)";
 			sourceTree = "<group>";
@@ -361,7 +385,14 @@
 			isa = PBXGroup;
 			children = (
 				316D1F571F762D150004974D /* LYCustomLayout.swift */,
+				31867DF11F79DAB6008C95BD /* LYInputNameCollectionViewCell.swift */,
 				316D1F591F763E2A0004974D /* LYPortraitCollectionViewCell.swift */,
+				31867DF31F79DAD4008C95BD /* LYSexCollectionViewCell.swift */,
+				31867DF51F79DAE6008C95BD /* LYBirthdayCollectionViewCell.swift */,
+				31867DF71F79DAFF008C95BD /* LYHeightCollectionViewCell.swift */,
+				31867DF91F79DB14008C95BD /* LYWeightCollectionViewCell.swift */,
+				31867DFB1F79DB2A008C95BD /* LYStepsCollectionViewCell.swift */,
+				31867DFD1F79DB44008C95BD /* LYRelationshipCollectionViewCell.swift */,
 			);
 			name = CollectionCellAndLayout;
 			sourceTree = "<group>";
@@ -502,6 +533,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-H98/Pods-H98-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
@@ -510,6 +542,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
@@ -534,6 +567,7 @@
 				314BD8681F74AB990098F9A6 /* LYScanView.swift in Sources */,
 				316D1F511F75F86D0004974D /* LYDeviceInforViewController.swift in Sources */,
 				314BD86F1F74ABBD0098F9A6 /* Bundle+Extension.swift in Sources */,
+				31867DFA1F79DB14008C95BD /* LYWeightCollectionViewCell.swift in Sources */,
 				314BD8671F74AB990098F9A6 /* LYCustomTopView.swift in Sources */,
 				314BD8911F74AC030098F9A6 /* NSObject+CZAddition.m in Sources */,
 				314BD8721F74ABCD0098F9A6 /* LYRequestManager.swift in Sources */,
@@ -548,6 +582,8 @@
 				314BD84A1F74AB490098F9A6 /* JanyBaseViewController.swift in Sources */,
 				314BD8601F74AB860098F9A6 /* LYInputViewController.swift in Sources */,
 				314BD8571F74AB7A0098F9A6 /* LYForgetViewController.swift in Sources */,
+				31867DFE1F79DB44008C95BD /* LYRelationshipCollectionViewCell.swift in Sources */,
+				31867DF61F79DAE6008C95BD /* LYBirthdayCollectionViewCell.swift in Sources */,
 				314BD84E1F74AB560098F9A6 /* LYHomeViewController.swift in Sources */,
 				314BD84B1F74AB490098F9A6 /* JanyMainViewController.swift in Sources */,
 				3127AB2B1F750BC0003AC960 /* LBXScanViewController.swift in Sources */,
@@ -555,22 +591,28 @@
 				314BD8501F74AB630098F9A6 /* LYInteractiveViewController.swift in Sources */,
 				314BD8921F74AC030098F9A6 /* NSString+Hash.m in Sources */,
 				314BD8941F74AC030098F9A6 /* UIColor+CZAddition.m in Sources */,
+				31867DFC1F79DB2A008C95BD /* LYStepsCollectionViewCell.swift in Sources */,
 				314BD8581F74AB7A0098F9A6 /* LYLoginViewController.swift in Sources */,
 				314BD8981F74AC030098F9A6 /* UIViewController+CZAddition.m in Sources */,
+				31867DF21F79DAB6008C95BD /* LYInputNameCollectionViewCell.swift in Sources */,
 				314BD8931F74AC030098F9A6 /* UIButton+CZAddition.m in Sources */,
 				314BD8521F74AB6C0098F9A6 /* LYMineViewController.swift in Sources */,
 				3127AB271F750BC0003AC960 /* LBXPermissions.swift in Sources */,
 				316D1F5A1F763E2A0004974D /* LYPortraitCollectionViewCell.swift in Sources */,
 				314BD8691F74AB990098F9A6 /* LYSecondLoginView.swift in Sources */,
+				31867DF81F79DAFF008C95BD /* LYHeightCollectionViewCell.swift in Sources */,
 				314BD85A1F74AB7A0098F9A6 /* LYResetViewController.swift in Sources */,
+				31867DF41F79DAD4008C95BD /* LYSexCollectionViewCell.swift in Sources */,
 				3127AB2C1F750BC0003AC960 /* LBXScanViewStyle.swift in Sources */,
 				3127AB291F750BC0003AC960 /* LBXScanNetAnimation.swift in Sources */,
+				31867DF01F79D729008C95BD /* RequestManager.m in Sources */,
 				316D1F581F762D150004974D /* LYCustomLayout.swift in Sources */,
 				314BD86A1F74AB990098F9A6 /* LYTitleView.swift in Sources */,
 				314BD88E1F74AC030098F9A6 /* NSArray+CZAddition.m in Sources */,
 				3127AB281F750BC0003AC960 /* LBXScanLineAnimation.swift in Sources */,
 				314BD84C1F74AB490098F9A6 /* JanyNavigationController.swift in Sources */,
 				314BD86B1F74AB990098F9A6 /* LYTxtCodeView.swift in Sources */,
+				31867DEF1F79D729008C95BD /* GetNetWorkState.m in Sources */,
 				314BD8971F74AC030098F9A6 /* UIView+CZAddition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

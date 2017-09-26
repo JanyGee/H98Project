@@ -40,3 +40,6 @@
 "baby_height" = "宝贝身高";
 "baby_weight" = "宝贝体重";
 "step_aim" = "步数目标";
+"boy_new" = "Boy";
+"girl_new" = "Girl";
+"message" = "message";

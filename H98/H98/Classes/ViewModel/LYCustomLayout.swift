@@ -10,7 +10,7 @@ import UIKit
 
 class LYCustomLayout: UICollectionViewFlowLayout {
 
-    var itemW: CGFloat = 200
+    var itemW: CGFloat = 250
     var itemH: CGFloat = 300
     
     lazy var inset: CGFloat = {
@@ -26,7 +26,7 @@ class LYCustomLayout: UICollectionViewFlowLayout {
         //设置滚动方向
         self.scrollDirection = .horizontal
         //设置间距
-        self.minimumLineSpacing = 0.4 * itemW
+        self.minimumLineSpacing = 0.2 * itemW
     }
     
     //苹果推荐，对一些布局的准备操作放在这里
@@ -67,7 +67,7 @@ class LYCustomLayout: UICollectionViewFlowLayout {
                 let normalizedDistance = distance / itemW
                 
                 if abs(distance) < itemW {
-                    let zoom = 1 + 0.6 * (1 - abs(normalizedDistance))
+                    let zoom = 1 + 0.4 * (1 - abs(normalizedDistance))
                     attributes.transform3D = CATransform3DMakeScale(zoom, zoom, 1.0)
                     attributes.zIndex = 1
                     attributes.alpha = 1.0
