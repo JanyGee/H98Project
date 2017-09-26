@@ -10,9 +10,9 @@ import UIKit
 
 class LYHomeViewController: UIViewController {
 
-    lazy var map:JanyBaseMapView = JanyBaseMapView()
+    var map:JanyBaseMapView?
+    lazy var mainView:LYMainView = LYMainView()
     
-    lazy var btn:UIButton = UIButton()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,22 +37,23 @@ extension LYHomeViewController{
     //MARK: UI
     fileprivate func setupUI() -> Void {
         
-        view.addSubview(map)
+        map = JanyBaiduMapView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height))
+        view.addSubview(map!)
+        map?.startLocationSuccess({ 
+            self.map?.stopLocation()
+        }, fail: { (error) in
+            print("反转地址失败")
+        })
         
-        map.snp.makeConstraints { (make) in
+        view.addSubview(mainView)
+        mainView.snp.makeConstraints { (make) in
             make.left.equalTo(0)
             make.right.equalTo(0)
-            make.top.equalTo(0)
-            make.bottom.equalTo(0)
+            make.bottom.equalTo(self.view.snp.bottom).offset(-44)
+            make.height.equalTo(300)
+            
         }
-        map.startLocationSuccess({
-            
-            self.map.stopLocation()
-            
-        }) { (error) in
 
-        
-        }
     }
     
     //MARK: 登录测试
