@@ -28,11 +28,12 @@ extension LYMainView{
         
         let version = UIDevice.systemVersion() as Double
         
-        if version < 10.0 {//10.0以后使用毛玻璃效果
+        if version < 8.0 {//10.0以后使用毛玻璃效果
             
             
         }
-        self.addSubview(blurView)
+        
+        addSubview(blurView)
         
     }
 }
