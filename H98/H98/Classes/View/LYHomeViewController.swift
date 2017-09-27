@@ -33,6 +33,32 @@ class LYHomeViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         navigationController?.navigationBar.isHidden = false
     }
+    
+    func firstLogin() -> Void {
+        
+        if !UserDefaults.standard.bool(forKey: "firstLaunch") {
+            
+            //不是第一次登陆,启动引导页
+            UserDefaults.standard.set(true, forKey: "firstLaunch")
+            
+            
+        }else{
+            //非首次使用app
+            
+        }
+    }
+    
+//    func verifyLogin() -> Bool {
+//        
+//        if !UserDefaults.standard.bool(forKey: "firstLaunch") {
+//            
+//            UserDefaults.standard.set(true, forKey: "firstLaunch")
+//            
+//        }else{
+//        
+//            UserDefaults.standard.set(true, forKey: "firstLaunch")
+//        }
+//    }
 }
 
 extension LYHomeViewController{

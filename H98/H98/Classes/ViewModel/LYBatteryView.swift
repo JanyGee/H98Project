@@ -13,11 +13,13 @@ class LYBatteryView: UIView {
     lazy var batteryImageView:UIImageView = UIImageView()
     lazy var linePath:UIBezierPath = UIBezierPath()
     lazy var myLayer:CAShapeLayer = CAShapeLayer()
+    var batteryValue:CGFloat = 0.2
     
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
+        backgroundColor = UIColor.clear
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -26,33 +28,35 @@ class LYBatteryView: UIView {
     
     override func draw(_ rect: CGRect) {
         
-        /*
-         UIBezierPath *linePath = [UIBezierPath bezierPath];
-         [linePath moveToPoint:CGPointMake(_battoryImage.frame.origin.x + 2, _battoryImage.frame.origin.y + 8.5f)];
-         [linePath addLineToPoint:CGPointMake(_battoryImage.frame.origin.x + 2 + (_battoryImage.frame.size.width - 7.f) * _battoryValue, _battoryImage.frame.origin.y + 8.5f)];
-         if (!_chartLine) {
-         _chartLine = [CAShapeLayer layer];
-         }
-         _chartLine.fillColor = [UIColor clearColor].CGColor;
-         _chartLine.strokeColor = [[UIColor darkGrayColor] CGColor];
-         _chartLine.lineWidth = _battoryImage.frame.size.height - 4;
-         _chartLine.strokeEnd = 0.f;
-         _chartLine.strokeEnd = 1.f;
-         [self.layer addSublayer:_chartLine];
-         _chartLine.path = linePath.CGPath;
-         
-         CABasicAnimation *pathAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
-         pathAnimation.duration = 2.f;
-         pathAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-         pathAnimation.fromValue = [NSNumber numberWithFloat:0.0f];
-         pathAnimation.toValue = [NSNumber numberWithFloat:1.0f];
-         pathAnimation.autoreverses = NO;
-         [_chartLine addAnimation:pathAnimation forKey:@"strokeEndAnimation"];
-         */
+        linePath.move(to: CGPoint(x: 2, y: 10))
+        linePath.addLine(to: CGPoint(x: 2 + 32 * batteryValue, y: 10))
+        myLayer.fillColor = UIColor.clear.cgColor
         
-        linePath.move(to: CGPoint(x: frame.origin.x + 2, y: center.y))
-        linePath.addLine(to: CGPoint(x: frame.size.width - 5, y: center.y))
+        if batteryValue <= 0.2 {
+            
+            myLayer.strokeColor = UIColor.red.cgColor
+            
+        }else if batteryValue > 0.2 && batteryValue < 0.5{
+            
+            myLayer.strokeColor = UIColor.orange.cgColor
+            
+        }else{
+            
+            myLayer.strokeColor = UIColor.green.cgColor
+        }
         
+        myLayer.lineWidth = frame.size.height - 4
+        myLayer.path = linePath.cgPath
+        layer.addSublayer(myLayer)
+        
+        
+        let pathAnimation = CABasicAnimation(keyPath: "strokeEnd")
+        pathAnimation.duration = 2
+        pathAnimation.timingFunction = CAMediaTimingFunction(name:kCAMediaTimingFunctionEaseInEaseOut)
+        pathAnimation.fromValue = 0
+        pathAnimation.toValue = 1
+        pathAnimation.autoreverses = false
+        myLayer.add(pathAnimation, forKey: "strokeEndAnimation")
         
     }
 
@@ -60,7 +64,7 @@ class LYBatteryView: UIView {
 
 extension LYBatteryView{
 
-    func setupUI() -> Void {
+    fileprivate func setupUI() -> Void {
         
         batteryImageView.image = UIImage(named: "battey")
         addSubview(batteryImageView)
@@ -70,5 +74,13 @@ extension LYBatteryView{
             make.top.equalTo(self.snp.top)
             make.bottom.equalTo(self.snp.bottom)
         }
+        
+        linePath = UIBezierPath()
+    }
+    
+    func setBatteryValue(value:CGFloat) -> Void {
+    
+        batteryValue = value
+        setNeedsDisplay()
     }
 }
