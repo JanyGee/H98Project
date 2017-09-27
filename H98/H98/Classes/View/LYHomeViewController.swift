@@ -54,7 +54,6 @@ extension LYHomeViewController{
             make.right.equalTo(0)
             make.bottom.equalTo(self.view.snp.bottom).offset(-49)
             make.height.equalTo(300)
-            
         }
 
         view.addSubview(deviceInforView)
