@@ -54,6 +54,10 @@
 		316D1F511F75F86D0004974D /* LYDeviceInforViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316D1F501F75F86D0004974D /* LYDeviceInforViewController.swift */; };
 		316D1F581F762D150004974D /* LYCustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316D1F571F762D150004974D /* LYCustomLayout.swift */; };
 		316D1F5A1F763E2A0004974D /* LYPortraitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316D1F591F763E2A0004974D /* LYPortraitCollectionViewCell.swift */; };
+		316DA2091F7B565B0099EDC8 /* LYDeviceListLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316DA2081F7B565B0099EDC8 /* LYDeviceListLayout.swift */; };
+		316DA20B1F7B59120099EDC8 /* LYDeviceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316DA20A1F7B59120099EDC8 /* LYDeviceCollectionViewCell.swift */; };
+		316DA2311F7B9D230099EDC8 /* LYSelectDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316DA2301F7B9D230099EDC8 /* LYSelectDeviceView.swift */; };
+		316DA2331F7BB07B0099EDC8 /* LYBatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316DA2321F7BB07B0099EDC8 /* LYBatteryView.swift */; };
 		31867DEF1F79D729008C95BD /* GetNetWorkState.m in Sources */ = {isa = PBXBuildFile; fileRef = 31867DEC1F79D729008C95BD /* GetNetWorkState.m */; };
 		31867DF01F79D729008C95BD /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31867DEE1F79D729008C95BD /* RequestManager.m */; };
 		31867DF21F79DAB6008C95BD /* LYInputNameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31867DF11F79DAB6008C95BD /* LYInputNameCollectionViewCell.swift */; };
@@ -153,6 +157,10 @@
 		316D1F501F75F86D0004974D /* LYDeviceInforViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYDeviceInforViewController.swift; sourceTree = "<group>"; };
 		316D1F571F762D150004974D /* LYCustomLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYCustomLayout.swift; sourceTree = "<group>"; };
 		316D1F591F763E2A0004974D /* LYPortraitCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYPortraitCollectionViewCell.swift; sourceTree = "<group>"; };
+		316DA2081F7B565B0099EDC8 /* LYDeviceListLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYDeviceListLayout.swift; sourceTree = "<group>"; };
+		316DA20A1F7B59120099EDC8 /* LYDeviceCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYDeviceCollectionViewCell.swift; sourceTree = "<group>"; };
+		316DA2301F7B9D230099EDC8 /* LYSelectDeviceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYSelectDeviceView.swift; sourceTree = "<group>"; };
+		316DA2321F7BB07B0099EDC8 /* LYBatteryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYBatteryView.swift; sourceTree = "<group>"; };
 		31867DEB1F79D729008C95BD /* GetNetWorkState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetNetWorkState.h; sourceTree = "<group>"; };
 		31867DEC1F79D729008C95BD /* GetNetWorkState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetNetWorkState.m; sourceTree = "<group>"; };
 		31867DED1F79D729008C95BD /* RequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestManager.h; sourceTree = "<group>"; };
@@ -555,6 +563,10 @@
 			isa = PBXGroup;
 			children = (
 				31867E401F7A5707008C95BD /* LYMainView.swift */,
+				316DA2081F7B565B0099EDC8 /* LYDeviceListLayout.swift */,
+				316DA20A1F7B59120099EDC8 /* LYDeviceCollectionViewCell.swift */,
+				316DA2301F7B9D230099EDC8 /* LYSelectDeviceView.swift */,
+				316DA2321F7BB07B0099EDC8 /* LYBatteryView.swift */,
 			);
 			name = MainPageView;
 			sourceTree = "<group>";
@@ -742,6 +754,7 @@
 				314BD88F1F74AC030098F9A6 /* NSArray+Log.m in Sources */,
 				314BD85E1F74AB860098F9A6 /* LYBindleViewController.swift in Sources */,
 				314BD8591F74AB7A0098F9A6 /* LYRegistViewController.swift in Sources */,
+				316DA2311F7B9D230099EDC8 /* LYSelectDeviceView.swift in Sources */,
 				314BD8961F74AC030098F9A6 /* UIScreen+CZAddition.m in Sources */,
 				3127AB2D1F750BC0003AC960 /* LBXScanWrapper.swift in Sources */,
 				31867E321F7A4220008C95BD /* JanyGeoCodeSearch.m in Sources */,
@@ -749,6 +762,7 @@
 				314BD8601F74AB860098F9A6 /* LYInputViewController.swift in Sources */,
 				314BD8571F74AB7A0098F9A6 /* LYForgetViewController.swift in Sources */,
 				31867DFE1F79DB44008C95BD /* LYRelationshipCollectionViewCell.swift in Sources */,
+				316DA20B1F7B59120099EDC8 /* LYDeviceCollectionViewCell.swift in Sources */,
 				31867E351F7A4220008C95BD /* PaopaoCustomView.m in Sources */,
 				31867DF61F79DAE6008C95BD /* LYBirthdayCollectionViewCell.swift in Sources */,
 				314BD84E1F74AB560098F9A6 /* LYHomeViewController.swift in Sources */,
@@ -757,9 +771,11 @@
 				314BD85F1F74AB860098F9A6 /* LYCodeViewController.swift in Sources */,
 				31867E2E1F7A4220008C95BD /* DVPinAnnotationView.m in Sources */,
 				31867E371F7A4220008C95BD /* UserLocation.m in Sources */,
+				316DA2091F7B565B0099EDC8 /* LYDeviceListLayout.swift in Sources */,
 				31867E311F7A4220008C95BD /* JanyBaiduMapView.m in Sources */,
 				314BD8501F74AB630098F9A6 /* LYInteractiveViewController.swift in Sources */,
 				314BD8921F74AC030098F9A6 /* NSString+Hash.m in Sources */,
+				316DA2331F7BB07B0099EDC8 /* LYBatteryView.swift in Sources */,
 				31867E2C1F7A4220008C95BD /* BMKClusterManager.m in Sources */,
 				314BD8941F74AC030098F9A6 /* UIColor+CZAddition.m in Sources */,
 				31867E331F7A4220008C95BD /* MovePointAnnotation.m in Sources */,

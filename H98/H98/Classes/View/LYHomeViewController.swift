@@ -12,6 +12,9 @@ class LYHomeViewController: UIViewController {
 
     var map:JanyBaseMapView?
     lazy var mainView:LYMainView = LYMainView()
+    lazy var deviceInforView:LYSelectDeviceView = LYSelectDeviceView()
+    lazy var phoneButton:UIButton = UIButton(type: .custom)
+    lazy var positionButton:UIButton = UIButton(type: .custom)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,11 +52,34 @@ extension LYHomeViewController{
         mainView.snp.makeConstraints { (make) in
             make.left.equalTo(0)
             make.right.equalTo(0)
-            make.bottom.equalTo(self.view.snp.bottom).offset(-44)
+            make.bottom.equalTo(self.view.snp.bottom).offset(-49)
             make.height.equalTo(300)
             
         }
 
+        view.addSubview(deviceInforView)
+        deviceInforView.snp.makeConstraints { (make) in
+            make.left.equalTo(10)
+            make.top.equalTo(self.view.snp.top).offset(20)
+            make.right.equalTo(self.view.snp.right).offset(-10)
+            make.height.equalTo(60)
+        }
+        
+        view.addSubview(phoneButton)
+        phoneButton.setBackgroundImage(UIImage(named:"iphone"), for: .normal)
+        phoneButton.snp.makeConstraints { (make) in
+            make.right.equalTo(-10)
+            make.top.equalTo(deviceInforView.snp.bottom).offset(10)
+            make.size.equalTo(CGSize(width: 55, height: 55))
+        }
+        
+        view.addSubview(positionButton)
+        positionButton.setBackgroundImage(UIImage(named:"Shape23"), for: .normal)
+        positionButton.snp.makeConstraints { (make) in
+            make.right.equalTo(-10)
+            make.top.equalTo(phoneButton.snp.bottom).offset(10)
+            make.size.equalTo(CGSize(width: 55, height: 55))
+        }
     }
     
     //MARK: 登录测试

@@ -14,7 +14,6 @@ class LYDeviceInforViewController: UIViewController,UICollectionViewDelegate,UIC
     lazy var titleView:LYTitleView = LYTitleView()
     lazy var titleLabel:YYLabel = YYLabel()
     var choiceView:UICollectionView?
-    lazy var portaitCell:LYPortraitCollectionViewCell = LYPortraitCollectionViewCell()
     lazy var pageControl:UIImageView = UIImageView()
     lazy var nextButton:UIButton = UIButton(type: .custom)
     
