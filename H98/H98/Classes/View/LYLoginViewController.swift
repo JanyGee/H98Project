@@ -22,6 +22,10 @@ class LYLoginViewController: UIViewController {
     lazy var fogBtn:UIButton = UIButton(type: .custom)
     lazy var bottomView:LYSecondLoginView = LYSecondLoginView()
     
+    var countTxt:String?
+    var pwdTxt:String?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,6 +37,8 @@ class LYLoginViewController: UIViewController {
     
     //MARK: 点击登录
     func loginButtonClick() -> Void {
+        
+        //判断账号密码是否为空
         dismiss(animated: true, completion: nil)
     }
     
@@ -55,6 +61,12 @@ class LYLoginViewController: UIViewController {
         }
         let vc = cls.init();
         present(vc, animated: true, completion: nil)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        txtField.keyBoardHide()
+        pwdField.keyBoardHide()
     }
 
     //MARK: UI
@@ -86,6 +98,10 @@ class LYLoginViewController: UIViewController {
             make.right.equalTo(-50)
             make.height.equalTo(50)
         }
+        txtField.backTextValue = {(str) in
+        
+            self.countTxt = str
+        }
         
         pwdField.heroID = "code"
         //pwdField.backgroundColor = UIColor.cz_random()
@@ -95,6 +111,10 @@ class LYLoginViewController: UIViewController {
             make.left.equalTo(50)
             make.right.equalTo(-50)
             make.height.equalTo(50)
+        }
+        pwdField.backTextValue = {(str) in
+            
+            self.pwdTxt = str
         }
         
         loginButton.heroID = "log"

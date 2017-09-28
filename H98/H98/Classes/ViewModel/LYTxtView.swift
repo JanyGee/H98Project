@@ -8,10 +8,11 @@
 
 import UIKit
 
-class LYTxtView: UIView {
+class LYTxtView: UIView,UITextFieldDelegate {
 
     lazy var txt:UITextField = UITextField()
     lazy var hLineView:UIView = UIView()
+    var backTextValue:((_ title:String) -> Void)?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -28,6 +29,7 @@ class LYTxtView: UIView {
         addSubview(hLineView)
         
         txt.borderStyle = .none
+        txt.delegate = self
         txt.clearButtonMode = .whileEditing
         txt.textColor = UIColor.black
         //txt.backgroundColor = UIColor.cz_random()
@@ -55,4 +57,15 @@ class LYTxtView: UIView {
         txt.keyboardType = type
     }
 
+    func keyBoardHide() -> Void {
+        txt.resignFirstResponder()
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        
+        guard let str = textField.text else {
+            return
+        }
+        backTextValue!(str)
+    }
 }
