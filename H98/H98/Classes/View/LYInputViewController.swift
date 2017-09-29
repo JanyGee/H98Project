@@ -38,8 +38,6 @@ class LYInputViewController: UIViewController {
     //MARK: UI
     func setupUI() -> Void {
         
-        isHeroEnabled = true
-        
         view.addSubview(bkImageView)
         view.addSubview(titleView)
         view.addSubview(inputNumberView)
@@ -66,7 +64,6 @@ class LYInputViewController: UIViewController {
             self.dismiss(animated: true, completion: nil)
         }
         
-        inputNumberView.heroID = "input"
         inputNumberView.snp.makeConstraints { (make) in
             make.top.equalTo(titleView.snp.bottom).offset(24)
             make.left.equalTo(10)

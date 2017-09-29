@@ -7,12 +7,11 @@
 //
 
 import UIKit
-import YYKit
 
 class LYDeviceInforViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UIScrollViewDelegate {
 
     lazy var titleView:LYTitleView = LYTitleView()
-    lazy var titleLabel:YYLabel = YYLabel()
+    lazy var titleLabel:UILabel = UILabel()
     var choiceView:UICollectionView?
     lazy var pageControl:UIImageView = UIImageView()
     lazy var nextButton:UIButton = UIButton(type: .custom)

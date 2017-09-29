@@ -7,11 +7,10 @@
 //
 
 import UIKit
-import YYKit
 
 class LYTitleView: UIView {
 
-    private lazy var titleLabel:YYLabel = YYLabel()
+    private lazy var titleLabel:UILabel = UILabel()
     private lazy var leftButton:UIButton = UIButton(type: .custom)
     var leftButtonClickBlock:(()->())?
     
@@ -38,7 +37,7 @@ class LYTitleView: UIView {
             make.bottom.equalTo(-5)
         }
         
-        titleLabel = YYLabel()
+        titleLabel = UILabel()
         //titleLabel.backgroundColor = UIColor.cz_random()
         titleLabel.textColor = UIColor.white
         titleLabel.textAlignment = .center

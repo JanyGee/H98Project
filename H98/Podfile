@@ -4,11 +4,8 @@ target 'H98'do
     use_frameworks!
     pod 'BaiduMapKit'
     pod 'GoogleMaps'
-    pod 'Hero'
     pod 'SnapKit'#类似Masonry
     pod 'Alamofire'#类似AFN
-    pod 'YYModel'
-    pod 'YYKit'
     pod 'AFNetworking'
     pod 'Toast-Swift'
     #pod 'LBXScan/LBXNative'#原生二维码扫描pod 'swiftScan'

@@ -7,13 +7,12 @@
 //
 
 import UIKit
-import YYKit
 
 class LYScanView: UIView {
 
     lazy var bkImageView:UIImageView = UIImageView()
     lazy var imgView:UIImageView = UIImageView()
-    lazy var title:YYLabel = YYLabel()
+    lazy var title:UILabel = UILabel()
     lazy var descriptionBtn:UIButton = UIButton()
     
     var tapViewBlock:(()->())?

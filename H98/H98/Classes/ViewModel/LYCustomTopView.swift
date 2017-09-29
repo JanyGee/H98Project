@@ -7,12 +7,11 @@
 //
 
 import UIKit
-import YYKit
 
 class LYCustomTopView: UIView {
 
     lazy var bkImageView:UIImageView = UIImageView()
-    private lazy var titleLabel:YYLabel = YYLabel()
+    private lazy var titleLabel:UILabel = UILabel()
     private lazy var leftButton:UIButton = UIButton(type: .custom)
     var leftButtonClickBlock:(()->())?
     

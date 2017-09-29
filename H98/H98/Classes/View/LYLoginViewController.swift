@@ -8,8 +8,6 @@
 
 import UIKit
 import SnapKit
-import Alamofire
-import Hero
 import Toast_Swift
 
 class LYLoginViewController: UIViewController,EAIntroDelegate {
@@ -39,7 +37,11 @@ class LYLoginViewController: UIViewController,EAIntroDelegate {
     
     func loginRequest(account:String,pwd:String) -> Void {
         
-//        let request = RequestManager.share()(request(<#T##url: URLConvertible##URLConvertible#>, method: <#T##HTTPMethod#>, parameters: <#T##Parameters?#>, encoding: <#T##ParameterEncoding#>, headers: <#T##HTTPHeaders?#>))
+        RequestManager.share().loginByUserNameAndPassword(withName: account, pass: pwd, appId: "81", language: "", loginType: "", success: { (response) in
+            
+        }) { (task, error) in
+            
+        }
         
     }
     
@@ -110,7 +112,6 @@ class LYLoginViewController: UIViewController,EAIntroDelegate {
             make.bottom.equalTo(0)
         }
         
-        txtField.heroID = "count"
         //txtField.backgroundColor = UIColor.cz_random()
         txtField.setTxtPlaceHolder(place: NSLocalizedString("input_email_or_iphone", comment: "输入邮箱或者密码"))
         txtField.snp.makeConstraints { (make) in
@@ -125,7 +126,6 @@ class LYLoginViewController: UIViewController,EAIntroDelegate {
             self.countTxt = str
         }
         
-        pwdField.heroID = "code"
         //pwdField.backgroundColor = UIColor.cz_random()
         pwdField.setTxtPlaceHolder(place: NSLocalizedString("input_pwd", comment: "输入密码"))
         pwdField.snp.makeConstraints { (make) in
@@ -139,7 +139,6 @@ class LYLoginViewController: UIViewController,EAIntroDelegate {
             self.pwdTxt = str
         }
         
-        loginButton.heroID = "log"
         //loginButton.backgroundColor = UIColor.cz_random()
         loginButton.setTitleColor(UIColor.white, for: .normal)
         loginButton.titleEdgeInsets = UIEdgeInsetsMake(-5, 0, 0, 0)
@@ -154,7 +153,6 @@ class LYLoginViewController: UIViewController,EAIntroDelegate {
             make.height.equalTo(55)
         }
         
-        regBtn.heroID = "reg"
         //regBtn.backgroundColor = UIColor.cz_random()
         regBtn.setTitleColor(UIColor.darkGray, for: .normal)
         regBtn.titleLabel?.font = UIFont.systemFont(ofSize: 18)
@@ -169,7 +167,6 @@ class LYLoginViewController: UIViewController,EAIntroDelegate {
             make.height.equalTo(30)
         }
         
-        fogBtn.heroID = "fog"
         //fogBtn.backgroundColor = UIColor.cz_random()
         fogBtn.setTitleColor(UIColor.darkGray, for: .normal)
         fogBtn.titleLabel?.font = UIFont.systemFont(ofSize: 18)

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Hero
 
 class LYForgetViewController: UIViewController {
 
@@ -40,8 +39,6 @@ class LYForgetViewController: UIViewController {
     //MARK: UI
     func setupUI() -> Void {
         
-        isHeroEnabled = true
-        
         view.addSubview(bkImageView)
         view.addSubview(titleView)
         view.addSubview(txtField)
@@ -56,7 +53,6 @@ class LYForgetViewController: UIViewController {
             make.bottom.equalTo(0)
         }
         
-        titleView.heroID = "fog"
         titleView.setButtonStateAndTitle(flag: false, img:"back", title: "")
         titleView.snp.makeConstraints { (make) in
             make.left.equalTo(0)
@@ -69,7 +65,6 @@ class LYForgetViewController: UIViewController {
             self?.dismiss(animated: true, completion: nil)
         }
         
-        txtField.heroID = "count"
         //txtField.backgroundColor = UIColor.cz_random()
         txtField.setTxtPlaceHolder(place: NSLocalizedString("input_email_or_iphone", comment: "输入邮箱或者密码"))
         txtField.snp.makeConstraints { (make) in
@@ -80,7 +75,6 @@ class LYForgetViewController: UIViewController {
             make.height.equalTo(50)
         }
         
-        txtCode.heroID = "code"
         //txtCode.backgroundColor = UIColor.cz_random()
         txtCode.setTxtPlaceHolder(place: NSLocalizedString("input_code", comment: "输入验证码"))
         txtCode.snp.makeConstraints { (make) in
@@ -90,7 +84,6 @@ class LYForgetViewController: UIViewController {
             make.height.equalTo(50)
         }
         
-        nextButton.heroID = "log"
         //nextButton.backgroundColor = UIColor.cz_random()
         nextButton.setTitleColor(UIColor.white, for: .normal)
         nextButton.titleEdgeInsets = UIEdgeInsetsMake(-5, 0, 0, 0)

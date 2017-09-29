@@ -31,7 +31,6 @@ class LYResetViewController: UIViewController {
             return
         }
         
-        isHeroEnabled = false
         dismiss(animated: false) {
             // go back to MainMenuView as the eyes of the user
             presentingViewController.dismiss(animated: true, completion: nil)
@@ -52,8 +51,6 @@ class LYResetViewController: UIViewController {
     
     //MARK: UI
     func setupUI() -> Void {
-        
-        isHeroEnabled = true
         
         view.addSubview(bkImageView)
         view.addSubview(titleView)
@@ -77,7 +74,7 @@ class LYResetViewController: UIViewController {
             make.top.equalTo(0)
         }
         
-        txtField.heroID = "count"
+
         txtField.setTxtPlaceHolder(place: NSLocalizedString("new_pwd", comment: "输入新密码"))
         txtField.snp.makeConstraints { (make) in
             
@@ -91,7 +88,6 @@ class LYResetViewController: UIViewController {
             self?.dismiss(animated: true, completion: nil)
         }
         
-        pwdField.heroID = "code"
         //pwdField.backgroundColor = UIColor.cz_random()
         pwdField.setTxtPlaceHolder(place: NSLocalizedString("again_pwd", comment: "再次输入"))
         pwdField.snp.makeConstraints { (make) in
@@ -100,8 +96,7 @@ class LYResetViewController: UIViewController {
             make.right.equalTo(-50)
             make.height.equalTo(50)
         }
-        
-        compeletButton.heroID = "log"
+
         //compeletButton.backgroundColor = UIColor.cz_random()
         compeletButton.setTitleColor(UIColor.white, for: .normal)
         compeletButton.titleEdgeInsets = UIEdgeInsetsMake(-5, 0, 0, 0)

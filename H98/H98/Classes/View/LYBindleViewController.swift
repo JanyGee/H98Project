@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Hero
 
 class LYBindleViewController: UIViewController {
 
@@ -31,8 +30,7 @@ extension LYBindleViewController{
 
     //MARK: UI
    fileprivate func setupUI() -> Void {
-        
-        //isHeroEnabled = true
+    
         
         view.addSubview(bkImageView)
         view.addSubview(titleView)
@@ -59,8 +57,7 @@ extension LYBindleViewController{
             
             self.dismiss(animated: true, completion: nil)
         }
-        
-        scanView.heroID = "scanView"
+
         scanView.setUIWithData(img: "saomiao", titleStr: NSLocalizedString("scan_for_bind", comment: "扫描设备二维码绑定"))
         scanView.snp.makeConstraints { (make) in
             make.top.equalTo(titleView.snp.bottom).offset(24)
@@ -80,7 +77,6 @@ extension LYBindleViewController{
             self.present(vc, animated: true, completion: nil)
         }
         
-        inputNumberView.heroID = "input"
         inputNumberView.setUIWithData(img: "chuanhao", titleStr: NSLocalizedString("input_number_bind", comment: "输入设备串号绑定"))
         inputNumberView.snp.makeConstraints { (make) in
             make.top.equalTo(scanView.snp.bottom).offset(10)
