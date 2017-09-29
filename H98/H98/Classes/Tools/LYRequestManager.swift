@@ -24,6 +24,7 @@ class LYRequestManager: NSObject {
     private override init(){}
     
     func requestData(_ type : MethodType, URLString : String, parameters : [String : Any]? = nil, finishedCallback :  @escaping (_ result : Any) -> ()) {
+        
         let method = type == .get ? HTTPMethod.get : HTTPMethod.post
         Alamofire.request(URLString, method: method, parameters: parameters).responseJSON { (response) in
             guard let result = response.result.value else {

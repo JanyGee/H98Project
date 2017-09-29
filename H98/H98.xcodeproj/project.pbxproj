@@ -90,6 +90,7 @@
 		31867E3B1F7A4220008C95BD /* JZLocationConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 31867E291F7A4220008C95BD /* JZLocationConverter.m */; };
 		31867E3E1F7A4246008C95BD /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 31867E3D1F7A4246008C95BD /* Model.m */; };
 		31867E411F7A5707008C95BD /* LYMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31867E401F7A5707008C95BD /* LYMainView.swift */; };
+		31B8702D1F7DDD0200ADA1A7 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B8702C1F7DDD0200ADA1A7 /* String+Extension.swift */; };
 		31DBAC111F74B596001BF994 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 31DBAC0F1F74B596001BF994 /* LICENSE */; };
 		9ECAD8520D95732768DA2B43 /* Pods_H98.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B36D0279FA612485CC45A48 /* Pods_H98.framework */; };
 /* End PBXBuildFile section */
@@ -220,6 +221,7 @@
 		31867E3C1F7A4246008C95BD /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 		31867E3D1F7A4246008C95BD /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
 		31867E401F7A5707008C95BD /* LYMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYMainView.swift; sourceTree = "<group>"; };
+		31B8702C1F7DDD0200ADA1A7 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		31DBAC0F1F74B596001BF994 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		31DBAC101F74B596001BF994 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3B36D0279FA612485CC45A48 /* Pods_H98.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_H98.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -313,6 +315,7 @@
 				314BD8761F74ABF00098F9A6 /* Additions(快速遍历构造) */,
 				314BD86D1F74ABBD0098F9A6 /* Bundle+Extension.swift */,
 				314BD86E1F74ABBD0098F9A6 /* UIView+Extension.swift */,
+				31B8702C1F7DDD0200ADA1A7 /* String+Extension.swift */,
 				314BD8711F74ABCD0098F9A6 /* LYRequestManager.swift */,
 				31867DEB1F79D729008C95BD /* GetNetWorkState.h */,
 				31867DEC1F79D729008C95BD /* GetNetWorkState.m */,
@@ -734,6 +737,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
 				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
 				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 			);
@@ -743,6 +747,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 			);
@@ -785,6 +790,7 @@
 				314BD84A1F74AB490098F9A6 /* JanyBaseViewController.swift in Sources */,
 				314BD8601F74AB860098F9A6 /* LYInputViewController.swift in Sources */,
 				314BD8571F74AB7A0098F9A6 /* LYForgetViewController.swift in Sources */,
+				31B8702D1F7DDD0200ADA1A7 /* String+Extension.swift in Sources */,
 				31867DFE1F79DB44008C95BD /* LYRelationshipCollectionViewCell.swift in Sources */,
 				316DA20B1F7B59120099EDC8 /* LYDeviceCollectionViewCell.swift in Sources */,
 				31867E351F7A4220008C95BD /* PaopaoCustomView.m in Sources */,

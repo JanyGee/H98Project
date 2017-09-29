@@ -10,6 +10,7 @@ import UIKit
 import SnapKit
 import Alamofire
 import Hero
+import Toast_Swift
 
 class LYLoginViewController: UIViewController,EAIntroDelegate {
 
@@ -36,10 +37,28 @@ class LYLoginViewController: UIViewController,EAIntroDelegate {
         firstLogin()
     }
     
+    func loginRequest(account:String,pwd:String) -> Void {
+        
+//        let request = RequestManager.share()(request(<#T##url: URLConvertible##URLConvertible#>, method: <#T##HTTPMethod#>, parameters: <#T##Parameters?#>, encoding: <#T##ParameterEncoding#>, headers: <#T##HTTPHeaders?#>))
+        
+    }
+    
     //MARK: 点击登录
     func loginButtonClick() -> Void {
         
+        guard let mFlag = countTxt?.valiMobile(),let eFlag = countTxt?.validEmail() else {
+            view.window?.makeToast(NSLocalizedString("account_not_formart", comment: "账号格式不对"), duration: 2, position: .bottom)
+            return
+        }
+        
         //判断账号密码是否为空
+        if !mFlag || !eFlag {
+            
+            view.window?.makeToast(NSLocalizedString("account_not_formart", comment: "账号格式不对"), duration: 2, position: .bottom)
+            
+            return
+        }
+        
         dismiss(animated: true) { [weak self] in
             self?.loginSuccessBlock!()
         }

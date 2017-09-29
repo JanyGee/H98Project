@@ -10,5 +10,6 @@ target 'H98'do
     pod 'YYModel'
     pod 'YYKit'
     pod 'AFNetworking'
+    pod 'Toast-Swift'
     #pod 'LBXScan/LBXNative'#原生二维码扫描pod 'swiftScan'
 end

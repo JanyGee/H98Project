@@ -66,7 +66,6 @@ class LYHomeViewController: UIViewController {
             self?.setupUI()
         }
     }
-    
 }
 
 extension LYHomeViewController{
