@@ -1091,8 +1091,6 @@ v3.1.0
  ///标注在屏幕中锁定的位置，注意：地图初始化后才能设置screenPointToLock。可以在地图加载完成的回调方法：mapViewDidFinishLoading中使用此属性。
  @property (nonatomic, assign) CGPoint screenPointToLock;
  
- 3.新增接口：设定地理范围在屏幕中的显示区域
- BMKMapView新增：
 
 - (void)fitVisibleMapRect:(BMKMapRect)mapRect edgePadding:(UIEdgeInsets)insets withAnimated:(BOOL)animate;
 

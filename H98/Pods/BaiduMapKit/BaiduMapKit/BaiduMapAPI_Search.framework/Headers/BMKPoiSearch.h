@@ -33,11 +33,12 @@
  *@return 成功返回YES，否则返回NO
  */
 - (BOOL)poiSearchInbounds:(BMKBoundSearchOption*)option;
-
-/*
+/**
  *根据中心点、半径和检索词发起周边检索
  *异步函数，返回结果在BMKPoiSearchDelegate的onGetPoiResult通知
- * 周边搜索的搜索参数类（BMKNearbySearchOption）
+ *@param option 周边搜索的搜索参数类（BMKNearbySearchOption）
+ * 页码，如果是第一次发起搜索，填0，根据返回的结果可以去获取第n页的结果，页码从0开始
+ * 成功返回YES，否则返回NO
  */
 - (BOOL)poiSearchNearBy:(BMKNearbySearchOption*)option;
 /**

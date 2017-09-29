@@ -51,6 +51,9 @@
 		314BD8961F74AC030098F9A6 /* UIScreen+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 314BD8891F74AC030098F9A6 /* UIScreen+CZAddition.m */; };
 		314BD8971F74AC030098F9A6 /* UIView+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 314BD88B1F74AC030098F9A6 /* UIView+CZAddition.m */; };
 		314BD8981F74AC030098F9A6 /* UIViewController+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 314BD88D1F74AC030098F9A6 /* UIViewController+CZAddition.m */; };
+		316B2ACA1F7C80F700266F11 /* EAIntroPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 316B2AC71F7C80F700266F11 /* EAIntroPage.m */; };
+		316B2ACB1F7C80F700266F11 /* EAIntroView.m in Sources */ = {isa = PBXBuildFile; fileRef = 316B2AC91F7C80F700266F11 /* EAIntroView.m */; };
+		316B2ACE1F7C81BE00266F11 /* EARestrictedScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 316B2ACD1F7C81BE00266F11 /* EARestrictedScrollView.m */; };
 		316D1F511F75F86D0004974D /* LYDeviceInforViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316D1F501F75F86D0004974D /* LYDeviceInforViewController.swift */; };
 		316D1F581F762D150004974D /* LYCustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316D1F571F762D150004974D /* LYCustomLayout.swift */; };
 		316D1F5A1F763E2A0004974D /* LYPortraitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316D1F591F763E2A0004974D /* LYPortraitCollectionViewCell.swift */; };
@@ -154,6 +157,12 @@
 		314BD88C1F74AC030098F9A6 /* UIViewController+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CZAddition.h"; sourceTree = "<group>"; };
 		314BD88D1F74AC030098F9A6 /* UIViewController+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CZAddition.m"; sourceTree = "<group>"; };
 		315F5B121F74F5C600527043 /* H98-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "H98-Bridging-Header.h"; sourceTree = "<group>"; };
+		316B2AC61F7C80F700266F11 /* EAIntroPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAIntroPage.h; sourceTree = "<group>"; };
+		316B2AC71F7C80F700266F11 /* EAIntroPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAIntroPage.m; sourceTree = "<group>"; };
+		316B2AC81F7C80F700266F11 /* EAIntroView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAIntroView.h; sourceTree = "<group>"; };
+		316B2AC91F7C80F700266F11 /* EAIntroView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAIntroView.m; sourceTree = "<group>"; };
+		316B2ACC1F7C81BE00266F11 /* EARestrictedScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EARestrictedScrollView.h; sourceTree = "<group>"; };
+		316B2ACD1F7C81BE00266F11 /* EARestrictedScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EARestrictedScrollView.m; sourceTree = "<group>"; };
 		316D1F501F75F86D0004974D /* LYDeviceInforViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYDeviceInforViewController.swift; sourceTree = "<group>"; };
 		316D1F571F762D150004974D /* LYCustomLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYCustomLayout.swift; sourceTree = "<group>"; };
 		316D1F591F763E2A0004974D /* LYPortraitCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYPortraitCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -297,6 +306,7 @@
 		314BD82E1F74A3A20098F9A6 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				316B2AC51F7C80F700266F11 /* EAIntroView */,
 				31867DFF1F7A4220008C95BD /* JanyMapManager */,
 				316D1F521F760CCE0004974D /* PageControl */,
 				3127AB1F1F750BC0003AC960 /* SwiftScan */,
@@ -433,6 +443,19 @@
 				314BD88D1F74AC030098F9A6 /* UIViewController+CZAddition.m */,
 			);
 			name = "Additions(快速遍历构造)";
+			sourceTree = "<group>";
+		};
+		316B2AC51F7C80F700266F11 /* EAIntroView */ = {
+			isa = PBXGroup;
+			children = (
+				316B2ACC1F7C81BE00266F11 /* EARestrictedScrollView.h */,
+				316B2ACD1F7C81BE00266F11 /* EARestrictedScrollView.m */,
+				316B2AC61F7C80F700266F11 /* EAIntroPage.h */,
+				316B2AC71F7C80F700266F11 /* EAIntroPage.m */,
+				316B2AC81F7C80F700266F11 /* EAIntroView.h */,
+				316B2AC91F7C80F700266F11 /* EAIntroView.m */,
+			);
+			path = EAIntroView;
 			sourceTree = "<group>";
 		};
 		316D1F4F1F75F7FB0004974D /* Information(设备信息输入) */ = {
@@ -740,6 +763,7 @@
 				314BD8951F74AC030098F9A6 /* UILabel+CZAddition.m in Sources */,
 				31867E3E1F7A4246008C95BD /* Model.m in Sources */,
 				314BD8681F74AB990098F9A6 /* LYScanView.swift in Sources */,
+				316B2ACA1F7C80F700266F11 /* EAIntroPage.m in Sources */,
 				316D1F511F75F86D0004974D /* LYDeviceInforViewController.swift in Sources */,
 				314BD86F1F74ABBD0098F9A6 /* Bundle+Extension.swift in Sources */,
 				31867E3A1F7A4220008C95BD /* JanyMAMapMapView.m in Sources */,
@@ -778,6 +802,7 @@
 				316DA2331F7BB07B0099EDC8 /* LYBatteryView.swift in Sources */,
 				31867E2C1F7A4220008C95BD /* BMKClusterManager.m in Sources */,
 				314BD8941F74AC030098F9A6 /* UIColor+CZAddition.m in Sources */,
+				316B2ACE1F7C81BE00266F11 /* EARestrictedScrollView.m in Sources */,
 				31867E331F7A4220008C95BD /* MovePointAnnotation.m in Sources */,
 				31867E411F7A5707008C95BD /* LYMainView.swift in Sources */,
 				31867E381F7A4220008C95BD /* JanyGoogleMapView.m in Sources */,
@@ -808,6 +833,7 @@
 				314BD88E1F74AC030098F9A6 /* NSArray+CZAddition.m in Sources */,
 				3127AB281F750BC0003AC960 /* LBXScanLineAnimation.swift in Sources */,
 				314BD84C1F74AB490098F9A6 /* JanyNavigationController.swift in Sources */,
+				316B2ACB1F7C80F700266F11 /* EAIntroView.m in Sources */,
 				314BD86B1F74AB990098F9A6 /* LYTxtCodeView.swift in Sources */,
 				31867DEF1F79D729008C95BD /* GetNetWorkState.m in Sources */,
 				314BD8971F74AC030098F9A6 /* UIView+CZAddition.m in Sources */,

@@ -7,3 +7,4 @@
 #import "JanyBaiduMapView.h"
 #import <BaiduMapAPI_Base/BMKBaseComponent.h>
 #import <GoogleMaps/GMSServices.h>
+#import "EAIntroView.h"

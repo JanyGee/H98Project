@@ -22,8 +22,8 @@ class LYHomeViewController: UIViewController {
         // Do any additional setup after loading the view.
         view.backgroundColor = UIColor.white
         
-        //loginView()
-        setupUI()
+        verifyLogin()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -33,32 +33,40 @@ class LYHomeViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         navigationController?.navigationBar.isHidden = false
     }
+
     
-    func firstLogin() -> Void {
+    func verifyLogin() -> Void {
         
-        if !UserDefaults.standard.bool(forKey: "firstLaunch") {
+        if !UserDefaults.standard.bool(forKey: "userLogin") {
             
-            //不是第一次登陆,启动引导页
-            UserDefaults.standard.set(true, forKey: "firstLaunch")
-            
+            //UserDefaults.standard.set(true, forKey: "userLogin")
+            loginView()
             
         }else{
-            //非首次使用app
+        
+            //UserDefaults.standard.set(false, forKey: "userLogin")
+            setupUI()
+        }
+        
+    }
+    
+    //MARK: 没有登录过
+    func loginView() {
+        
+        guard let cls = NSClassFromString(Bundle.main.namespace() + "." + "LYLoginViewController") as? UIViewController.Type else {
+            return
+        }
+        
+        let vc = cls.init() as! LYLoginViewController
+        vc.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        present(vc, animated: true, completion: nil)
+        
+        vc.loginSuccessBlock = {[weak self] in
             
+            self?.setupUI()
         }
     }
     
-//    func verifyLogin() -> Bool {
-//        
-//        if !UserDefaults.standard.bool(forKey: "firstLaunch") {
-//            
-//            UserDefaults.standard.set(true, forKey: "firstLaunch")
-//            
-//        }else{
-//        
-//            UserDefaults.standard.set(true, forKey: "firstLaunch")
-//        }
-//    }
 }
 
 extension LYHomeViewController{
@@ -107,15 +115,4 @@ extension LYHomeViewController{
         }
     }
     
-    //MARK: 登录测试
-    func loginView() {
-        
-        guard let cls = NSClassFromString(Bundle.main.namespace() + "." + "LYLoginViewController") as? UIViewController.Type else {
-            return
-        }
-        
-        let vc = cls.init()
-        vc.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-        present(vc, animated: true, completion: nil)
-    }
 }

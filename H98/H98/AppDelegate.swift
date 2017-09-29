@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,BMKGeneralDelegate {
         
         window = UIWindow()
         window?.backgroundColor = UIColor.black
-        let vc = NSClassFromString(Bundle.main.namespace() + "." + "LYLoginViewController") as! UIViewController.Type
+        let vc = NSClassFromString(Bundle.main.namespace() + "." + "JanyMainViewController") as! UIViewController.Type
         window?.rootViewController = vc.init()
         window?.makeKeyAndVisible()
         return true

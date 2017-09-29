@@ -28,6 +28,8 @@
 	<string>iLe儿童手表需要使用您的位置来为您提供定位服务</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>iLe儿童手表需要使用您的照片库，才能更好的完成您的体验！</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>iLe儿童手表需要您的同意，才能访问麦克风</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

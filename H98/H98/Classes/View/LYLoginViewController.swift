@@ -11,7 +11,7 @@ import SnapKit
 import Alamofire
 import Hero
 
-class LYLoginViewController: UIViewController {
+class LYLoginViewController: UIViewController,EAIntroDelegate {
 
     private lazy var bkImageView:UIImageView = UIImageView()
     lazy var titleView:LYTitleView = LYTitleView()
@@ -21,6 +21,8 @@ class LYLoginViewController: UIViewController {
     lazy var regBtn:UIButton = UIButton(type: .custom)
     lazy var fogBtn:UIButton = UIButton(type: .custom)
     lazy var bottomView:LYSecondLoginView = LYSecondLoginView()
+    var loginSuccessBlock:(()->())?
+    
     
     var countTxt:String?
     var pwdTxt:String?
@@ -31,15 +33,16 @@ class LYLoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         view.backgroundColor = UIColor.white
-        
-        setupUI()
+        firstLogin()
     }
     
     //MARK: 点击登录
     func loginButtonClick() -> Void {
         
         //判断账号密码是否为空
-        dismiss(animated: true, completion: nil)
+        dismiss(animated: true) { [weak self] in
+            self?.loginSuccessBlock!()
+        }
     }
     
     //MARK: 注册
@@ -70,7 +73,7 @@ class LYLoginViewController: UIViewController {
     }
 
     //MARK: UI
-    private func setupUI() {
+    fileprivate func setupUI() {
         
         view.addSubview(bkImageView)
         view.addSubview(txtField)
@@ -169,5 +172,55 @@ class LYLoginViewController: UIViewController {
             make.right.equalTo(-50)
             make.height.equalTo(50)
         }
+    }
+}
+
+extension LYLoginViewController{
+    
+    func firstLogin() -> Void {
+        
+        if !UserDefaults.standard.bool(forKey: "firstLaunch") {
+            
+            //是第一次登陆,启动引导页
+            showIntroPage()
+            
+        }else{
+            
+            setupUI()
+        }
+    }
+    
+    func showIntroPage() -> Void {
+        
+        let page1 = EAIntroPage()
+        page1.bgImage = UIImage(named: "guide1")
+        
+        let page2 = EAIntroPage()
+        page2.bgImage = UIImage(named: "guide2")
+        
+        let page3 = EAIntroPage()
+        page3.bgImage = UIImage(named: "guide3")
+        
+        let intro = EAIntroView(frame: view.bounds, andPages: [page1,page2,page3])
+        intro?.delegate = self
+        intro?.pageControl = nil
+        
+        let btn = UIButton(type: .custom)
+        btn.setTitle(NSLocalizedString("skip_view", comment: "skip_view"), for: .normal)
+        btn.frame = CGRect(x: 0, y: 0, width: 100, height: 10)
+        intro?.skipButton = btn
+        
+        intro?.show(in: view, animateDuration: 0)
+        
+    }
+    
+    func introDidFinish(_ introView: EAIntroView!, wasSkipped: Bool) {
+        
+        UserDefaults.standard.set(true, forKey: "firstLaunch")
+        UserDefaults.standard.synchronize()
+    }
+    
+    func introWillFinish(_ introView: EAIntroView!, wasSkipped: Bool) {
+        setupUI()
     }
 }
